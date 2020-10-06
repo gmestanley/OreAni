@@ -1,0 +1,240 @@
+	#Player[FREE]
+	#ScriptVersion[2]
+
+	script_enemy_main
+	{
+let step=0;
+gra=1;
+let char=3;
+
+@Initialize()
+	{
+	SetLife(1);ForbidShot(true);ForbidBomb(true);
+	LoadGraphic(imgBoss);//ドット絵の読み込み
+	SetTexture(imgBoss);//読み込んだ画像を指定する
+	CreateEventFromScript("Event");
+	}
+
+@MainLoop(){
+	if(OnEvent==true){step=GetEventStep();
+		if(step == 0){
+		SetX(minX-50);
+		SetY(minY+60);
+		}
+		if(step == 1){
+		SetMovePosition02(cenX,minY+130,30);
+		}
+		if(step == 2){
+		yield;
+		}
+		if(step == 3){
+		VanishEnemy;
+		}
+	}
+}
+
+@DrawLoop{
+Graphic;
+}
+
+@Finalize(){
+	DeleteGraphic(imgBoss);//画像をメモリから解放
+	ForbidShot(false);ForbidBomb(false);
+}
+
+	#include_function ".\include.txt"
+}
+	
+
+	script_event Event
+	{
+
+	let imgSHEN=GetCurrentScriptDirectory~".\img\shencut.png";
+	let imgRYU=GetCurrentScriptDirectory~".\img\ryucut.png";
+	let imgKIRU=GetCurrentScriptDirectory~".\img\kirucut.png";
+
+		@Initialize
+		{
+		LoadGraphic(imgSHEN);//自機カット読み込み
+		LoadGraphic(imgRYU);//自機カット読み込み
+		LoadGraphic(imgKIRU);
+		}
+		
+		@MainLoop
+		{
+
+			SetStep(0);
+
+			if(GetPlayerScriptName=="sh2.txt"){//シェン会話
+			SetChar(LEFT,imgSHEN);//右側キャラクタの画像を設定
+			graphicLEFT(1);
+			MoveChar(LEFT,FRONT);
+			TextOut("\c[YELLOW]いつの間にか変な庭に迷い込んでしまった");//文字描画
+
+			graphicLEFT(7);
+			TextOut("\c[YELLOW]I messed up a bit here but...\n
+					It's self-defense, shouldn't be a problem.");//文字描画
+
+			SetStep(1);
+			Wait(60);		
+
+			MoveChar(LEFT,BACK);
+			SetChar(RIGHT,imgKIRU);//右側キャラクタの画像を設定
+			graphicLEFT(6);
+			graphicRIGHT(2);
+			MoveChar(RIGHT,FRONT);
+			TextOutC(60,"\c[RED]Heyheyheyhey-!\n
+					Who's rioting in the garden of someone's house?!");//文字描画
+
+			SetStep(2);
+			graphicLEFT(8);
+			MoveChar(LEFT,FRONT);
+			MoveChar(RIGHT,BACK);
+			TextOut("\c[YELLOW]It's just me, is there a problem?");//文字描画
+
+			MoveChar(LEFT,BACK);
+			MoveChar(RIGHT,FRONT);
+			graphicRIGHT(2);
+			TextOut("\c[RED]Obviously, use your common sense…");//文字描画
+
+			MoveChar(RIGHT,FRONT);
+			graphicRIGHT(3);
+			graphicLEFT(1);
+
+			SetNameFromText(RIGHT,TEXT_RED,"Kilma","Deep Crimson Gardener");
+			TextOut("\c[RED]This is Lord Devil's Garden.\n
+					Please refrain strictly from violent acts.);//文字描画
+
+			graphicLEFT(3);
+			MoveChar(LEFT,FRONT);
+			graphicRIGHT(1);
+			MoveChar(RIGHT,BACK);
+			TextOut("\c[YELLOW]The Devil!!\n
+					I needed to go right here, huhh.");//文字描画
+
+			MoveChar(LEFT,BACK);
+			graphicRIGHT(1);
+			MoveChar(RIGHT,FRONT);
+			TextOut("\c[RED]Hm? Have you,\n
+					perhaps come to see Lord Devil?");//文字描画
+
+
+			graphicLEFT(8);
+			MoveChar(LEFT,FRONT);
+			MoveChar(RIGHT,BACK);
+			TextOut("\c[YELLOW]That's right, though\n
+					I've come to see the Devil's untimely end!!");//文字描画
+
+			DeleteMusic(GetCurrentScriptDirectory~"\bgm\3-1.wav");
+			PlayMusic(GetCurrentScriptDirectory~"\bgm\3-2.wav");
+
+			graphicLEFT(7);
+			MoveChar(LEFT,BACK);
+			graphicRIGHT(2);
+			MoveChar(RIGHT,FRONT);
+			TextOut("\c[RED]Wha, what's with this guy…\n
+					Did he try to make a quip out of it…?");//文字描画
+
+			TextOut("\c[RED]I shall thin out such\n
+					a troublesome god right here!!");//文字描画
+			}
+
+			else if(GetPlayerScriptName=="ryu.txt"){//リュー会話
+			SetChar(LEFT,imgRYU);//右側キャラクタの画像を設定
+			graphicLEFTR(1);
+			MoveChar(LEFT,FRONT);
+			TextOut("\c[BLUE]Seems I lost my way in a rose garden…\n
+					Expected from Hell. Somehow feels like trouble here.");//文字描画
+
+			SetStep(1);
+			Wait(60);		
+
+			graphicLEFTR(6);
+			MoveChar(LEFT,BACK);
+			SetChar(RIGHT,imgKIRU);//右側キャラクタの画像を設定
+			graphicRIGHT(2);
+			MoveChar(RIGHT,FRONT);
+			TextOutC(60,"\c[RED]Heyheyheyhey-!\n
+					Who's rioting in the garden of someone's house?!");//文字描画
+
+			graphicLEFTR(3);
+			MoveChar(LEFT,FRONT);
+			graphicRIGHT(1);
+			MoveChar(RIGHT,BACK);
+			TextOut("\c[BLUE]This is legitimate self-defense!\n
+					I'd hit a bullet without it.");//文字描画
+
+			graphicLEFTR(5);
+			TextOut("\c[BLUE]（…Well, still my bad for invading.）");//文字描画	
+
+			MoveChar(LEFT,BACK);
+			graphicRIGHT(1);
+			MoveChar(RIGHT,FRONT);
+
+
+			SetNameFromText(RIGHT,TEXT_RED,"Kilma","Deep Crimson Gardener");
+			TextOut("\c[RED]Indeed, this is Lord Devil's garden, so\n
+					the entry of uninvolved people is forbidden.");//文字描画
+					
+			graphicLEFTR(1);
+			MoveChar(LEFT,FRONT);
+			MoveChar(RIGHT,BACK);
+			TextOut("\c[BLUE]Excuse me for that.\n
+					I'll immediately leave, leave I say.");//文字描画
+
+			DeleteMusic(GetCurrentScriptDirectory~"\bgm\3-1.wav");
+			PlayMusic(GetCurrentScriptDirectory~"\bgm\3-2.wav");
+
+			graphicLEFTR(6);
+			MoveChar(LEFT,BACK);
+			graphicRIGHT(3);
+			MoveChar(RIGHT,FRONT);
+			TextOut("\c[RED]Hey, did you think you can return alive?\n
+					I don't forgive whoever invades this garden!");//文字描画
+
+			TextOut("\c[RED]You shall become nutrient for\n
+					the deep red roses in this place!!");//文字描画		
+			}
+
+			SetStep(3);
+			End();//最後にEnd()は必須
+		}
+
+function graphicLEFT(num){
+	if(num==1){SetGraphicRect(LEFT,0,0,249,319);}//真顔
+	else if(num==2){SetGraphicRect(LEFT,250,0,499,319);}//おこ
+	else if(num==3){SetGraphicRect(LEFT,500,0,749,319);}//嬉しい
+	else if(num==4){SetGraphicRect(LEFT,750,0,999,319);}//引き
+	else if(num==5){SetGraphicRect(LEFT,0,320,249,640);}//びっくり
+	else if(num==6){SetGraphicRect(LEFT,250,320,499,640);}//気づく
+	else if(num==7){SetGraphicRect(LEFT,500,320,749,640);}//キラ
+	else if(num==8){SetGraphicRect(LEFT,750,320,999,640);}//悪い顔
+}
+	
+function graphicLEFTR(num){
+	if(num==1){SetGraphicRect(LEFT,0,0,249,319);}//真顔
+	else if(num==2){SetGraphicRect(LEFT,250,0,499,319);}//嬉しい
+	else if(num==3){SetGraphicRect(LEFT,500,0,749,319);}//おこ
+	else if(num==4){SetGraphicRect(LEFT,750,0,999,319);}//照れ
+	else if(num==5){SetGraphicRect(LEFT,0,320,249,640);}//引き
+	else if(num==6){SetGraphicRect(LEFT,250,320,499,640);}//気づく
+	else if(num==7){SetGraphicRect(LEFT,500,320,749,640);}//ビックリ
+	else if(num==8){SetGraphicRect(LEFT,750,320,999,640);}//悪い顔
+}
+
+function graphicRIGHT(num){
+	if(num==1){SetGraphicRect(RIGHT,0,0,250,320);}//真顔
+	else if(num==2){SetGraphicRect(RIGHT,250,0,500,320);}//おこ
+	else if(num==3){SetGraphicRect(RIGHT,500,0,750,320);}//ドヤ
+	else if(num==4){SetGraphicRect(RIGHT,750,0,1000,320);}//ボロ絵
+}
+		
+	
+		
+		@Finalize
+		{
+		DeleteGraphic(imgSHEN);
+		DeleteGraphic(imgRYU);
+		DeleteGraphic(imgKIRU);
+		}
+	}

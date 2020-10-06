@@ -1,0 +1,128 @@
+	#東方弾幕風[Stage]
+	#Title[Ore no Animism Hell Chapter - Fantastic]
+	#Text[～Avici～
+An "a r e  y o u  g o d"
+-like difficulty.
+Fuhahaha, you better do your best!]
+	#Image[.\img\oreani.png]
+	#Player[player\Shen\sh2.txt,player\Ryu\ryu.txt]
+	#BackGround[User()]
+	#ScriptVersion[2]
+	
+	let stage=1;
+	script_stage_main
+	{
+		task StageTask
+		{//ステージタスク
+			stage1;
+			stage2;
+			stage3;
+			stage4;
+			stage5;
+			stage6;
+			ClearStage();//ステージクリア
+		}
+		@Initialize()
+		{
+			LoadGraphic(imgNumberS);
+			LoadGraphic(imgRESULT);
+			ExpertEx(false,3,3);
+			StageTask();//ステージタスク起動
+			FrameData;
+		}
+		
+		@MainLoop()
+		{
+			yield;//毎フレームタスク復帰
+		}
+		
+		@Finalize()
+		{
+		DeleteGraphic(imgBack);
+		DeleteGraphic(imgBack2);
+		DeleteGraphic(imgBack3);
+		DeleteGraphic(imgFog);
+		DeleteGraphic(imgNumberS);
+		DeleteGraphic(imgRESULT);
+		}
+
+@BackGround{
+	alternative(stage)
+	case(1){StageBG1;}
+	case(2){StageBG2;}
+	case(3){StageBG3;}
+	case(4){StageBG4;}
+	case(5){StageBG5;}
+	case(6){StageBG6;}
+	others{}
+	}
+	/*
+		@DrawBottomObject
+		{
+		 //敵や弾以外で背景のすぐ上にオブジェクトを表示する
+		 //なくても問題ありません
+		}
+	*/	
+	/*
+		@DrawTopObject
+		{
+		 //敵や弾以外で最も全面にオブジェクトを表示する
+		 //なくても問題ありません
+		}
+	*/
+
+
+	#include_function".\stagedata\STAGE1F.txt"
+	#include_function".\stagedata\STAGE2F.txt"
+	#include_function".\stagedata\STAGE3F.txt"
+	#include_function".\stagedata\STAGE4F.txt"
+	#include_function".\stagedata\STAGE5F.txt"
+	#include_function".\stagedata\STAGE6F.txt"
+	#include_function".\stagedata\stage関数.txt"
+
+	#include_function ".\TITLE.txt"
+	#include_function ".\includeS.txt"
+	#include_script ".\includeC.txt"
+	}
+
+
+script_shot Rock{//弾スクリプト５面岩
+		let char=0;
+		let count=0;
+		let angle=GetAngle();//進行角度取得
+		let csd=GetCurrentScriptDirectory;
+
+		let imgRock=csd~".\img\dot-kaze-ti.png";//岩
+
+		@Initialize
+		{	
+			LoadGraphic(imgRock);
+			//SetDefault(BLUE01);
+			TMain;
+		}
+		@MainLoop
+		{
+			SetBombResist();
+			SetCollisionB(GetX,GetY,96);
+			yield;	
+		}
+		@DrawLoop
+		{
+     		SetTexture(imgRock);
+		SetGraphicAngle(0, 0, rand(-4,4));
+		SetAlpha(255);
+		SetRenderState(ALPHA);
+		SetColor(255,255,255);
+		SetGraphicExpansion(3.5,3.5);
+		SetGraphicRect(256,256,320,320);
+	        DrawGraphic(GetX, GetY);
+		}
+		@Finalize
+		{
+	
+		}
+
+		task TMain{
+		yield;
+		}
+}

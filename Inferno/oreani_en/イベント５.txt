@@ -1,0 +1,282 @@
+	#Player[FREE]
+	#ScriptVersion[2]
+
+	script_enemy_main
+	{
+let step=0;
+gra=1;
+let char=5;
+
+@Initialize()
+	{
+	SetLife(1);ForbidShot(true);ForbidBomb(true);
+	LoadGraphic(imgBoss);//ドット絵の読み込み
+	SetTexture(imgBoss);//読み込んだ画像を指定する
+	CreateEventFromScript("Event");
+	}
+
+@MainLoop(){
+	if(OnEvent==true){step=GetEventStep();
+		if(step == 0){
+		SetX(minX-50);
+		SetY(minY+60);
+		}
+		if(step == 1){
+		SetMovePosition02(cenX,minY+130,30);
+		}
+		if(step == 2){
+		yield;
+		}
+		if(step == 3){
+		VanishEnemy;
+		}
+	}
+}
+
+@DrawLoop{
+Graphic;
+}
+
+@Finalize(){
+	DeleteGraphic(imgBoss);//画像をメモリから解放
+	ForbidShot(false);ForbidBomb(false);
+}
+
+	#include_function ".\include.txt"
+}
+	
+
+	script_event Event
+	{
+
+	let imgSHEN=GetCurrentScriptDirectory~".\img\shencut.png";
+	let imgRYU=GetCurrentScriptDirectory~".\img\ryucut.png";
+	let imgGALD=GetCurrentScriptDirectory~".\img\galdcut.png";
+
+		@Initialize
+		{
+		LoadGraphic(imgSHEN);//自機カット読み込み
+		LoadGraphic(imgRYU);//自機カット読み込み
+		LoadGraphic(imgGALD);
+		}
+		
+		@MainLoop
+		{
+
+			SetStep(0);
+
+			if(GetPlayerScriptName=="sh2.txt"){//シェン会話
+
+			SetChar(LEFT,imgSHEN);//右側キャラクタの画像を設定
+			graphicLEFT(1);
+			MoveChar(LEFT,FRONT);
+			TextOut("\c[YELLOW]この穴、どこまで落ちれば終わるんだ？\n
+					地獄は不思議がいっぱいだなー");//文字描画
+
+			SetStep(1);
+			Wait(60);		
+
+			MoveChar(LEFT,BACK);
+			graphicLEFT(6);
+			SetChar(RIGHT,imgGALD);//右側キャラクタの画像を設定
+			graphicRIGHT(1);
+			MoveChar(RIGHT,FRONT);
+			TextOutC(60,"\c[RED]俺にはお前が不思議だよ\n
+					なんだってこんなところに神様が");//文字描画
+
+			SetStep(2);
+
+			graphicLEFT(3);
+			MoveChar(LEFT,FRONT);
+			MoveChar(RIGHT,BACK);
+			TextOut("\c[YELLOW]来たな悪魔め！\n
+					かかってこい！ふんふん！！");//文字描画
+
+			graphicLEFT(1);
+			graphicRIGHT(3);
+			MoveChar(LEFT,BACK);
+			MoveChar(RIGHT,FRONT);
+			TextOut("\c[RED]ははは、威勢のいい神様だなー！\n
+					気に入ったぞ");
+
+			graphicRIGHT(2);
+			SetNameFromText(RIGHT,TEXT_RED,"ガルド","通りすがりの縊り鬼");
+			TextOut("\c[RED]俺はガルド\n
+					まあ見ての通り悪魔だ　よろしくな！");//文字描画
+
+			graphicRIGHT(1);
+			graphicLEFT(3);
+			MoveChar(LEFT,FRONT);
+			MoveChar(RIGHT,BACK);
+			TextOut("\c[YELLOW]悪魔とよろしくする気なんてないッ！！\n
+					お前も撃ち落としてやるぞー！！");//文字描画
+
+			graphicLEFT(1);
+			graphicRIGHT(1);
+			MoveChar(LEFT,BACK);
+			MoveChar(RIGHT,FRONT);
+			TextOut("\c[RED]俺はよろしくしたいんだけどな\n
+					あくまでも");//文字描画
+
+			graphicRIGHT(1);
+			graphicLEFT(3);
+			MoveChar(LEFT,FRONT);
+			MoveChar(RIGHT,BACK);
+			TextOut("\c[YELLOW]ええい、ゴタクはもういい！\n
+					やるならぱっぱとやろうぜ！！");//文字描画
+
+			DeleteMusic(GetCurrentScriptDirectory~"\bgm\5-1.wav");
+			PlayMusic(GetCurrentScriptDirectory~"\bgm\5-2.wav");
+
+			graphicLEFT(7);
+			graphicRIGHT(2);
+			MoveChar(LEFT,BACK);
+			MoveChar(RIGHT,FRONT);
+			TextOutC(40,"\c[RED]どうやら、少し遊んでやらないと\n
+					話もできないみたいだな！");//文字描画
+
+			graphicLEFT(3);
+			MoveChar(LEFT,FRONT);
+			MoveChar(RIGHT,BACK);
+			TextOut("\c[YELLOW]お？やっとやる気になったな！！");//文字描画
+
+			graphicLEFT(7);
+			graphicRIGHT(2);
+			MoveChar(LEFT,BACK);
+			MoveChar(RIGHT,FRONT);
+			TextOut("\c[RED]かかって来いよちびっ子神様！\n
+					悪魔の本当の恐ろしさを教えてやる！！");//文字描画
+
+			SetStep(3);
+			}
+
+			if(GetPlayerScriptName=="ryu.txt"){//リュー会話
+
+			SetChar(LEFT,imgRYU);//右側キャラクタの画像を設定
+			graphicLEFT(5);
+			MoveChar(LEFT,FRONT);
+			TextOut("\c[BLUE]どんどん落ちていくな\n
+					っていうか底が見えないぞこの縦穴");//文字描画
+
+			SetStep(1);
+			Wait(60);		
+
+			MoveChar(LEFT,BACK);
+			graphicLEFT(6);
+			SetChar(RIGHT,imgGALD);//右側キャラクタの画像を設定
+			graphicRIGHT(1);
+			MoveChar(RIGHT,FRONT);
+			TextOutC(60,"\c[RED]底に着くまで２０００年かかるからなー\n
+					自由落下だと");//文字描画
+
+			SetStep(2);
+
+			graphicLEFT(2);
+			MoveChar(LEFT,FRONT);
+			MoveChar(RIGHT,BACK);
+			TextOut("\c[BLUE]悪魔が出た\n
+					２０００年かあ…");//文字描画
+
+			graphicLEFT(7);
+			TextOut("\c[BLUE]って２０００年！？\n
+					そんなかかるなら帰ろうかな");//文字描画
+
+			graphicLEFT(1);
+			graphicRIGHT(2);
+			MoveChar(LEFT,BACK);
+			MoveChar(RIGHT,FRONT);
+			SetNameFromText(RIGHT,TEXT_RED,"ガルド","通りすがりの縊り鬼");
+			TextOut("\c[RED]まあそう慌てるな\n
+					俺が手伝えば３分で着くんだから");
+
+			graphicLEFT(5);
+			graphicRIGHT(1);
+			MoveChar(LEFT,FRONT);
+			MoveChar(RIGHT,BACK);
+			TextOut("\c[BLUE]何だそりゃ\n
+					罠としか思えない");//文字描画
+
+			graphicLEFT(1);
+			graphicRIGHT(3);
+			MoveChar(LEFT,BACK);
+			MoveChar(RIGHT,FRONT);
+			TextOut("\c[RED]はは、罠でも何でもないし\n
+					対価を要求したりもしないぞ");
+
+			graphicRIGHT(1);
+			TextOut("\c[RED]魔王がお前に会いたがってるんだよ\n
+					だから俺に下まで連れて来いってさ");
+
+			graphicRIGHT(3);
+			TextOut("\c[RED]流石にあいつも２０００年は待てないしな！");
+
+			graphicLEFT(4);
+			graphicRIGHT(1);
+			MoveChar(LEFT,FRONT);
+			MoveChar(RIGHT,BACK);
+			TextOut("\c[BLUE]魔王が会いたがってるだと？\n
+					どういうこっちゃ");//文字描画
+
+			graphicLEFT(4);
+			graphicRIGHT(1);
+			MoveChar(LEFT,BACK);
+			MoveChar(RIGHT,FRONT);
+			TextOut("\c[RED]ん？楽しいことが好きだからな\n
+					あいつは");//文字描画
+
+			graphicRIGHT(3);
+			TextOut("\c[RED]まあ、新しい遊び相手が来た！\n
+					とか思ってるんじゃないか");//文字描画
+
+			graphicRIGHT(1);
+			graphicLEFT(5);
+			MoveChar(LEFT,FRONT);
+			MoveChar(RIGHT,BACK);
+			TextOut("\c[BLUE]おれは魔王と遊びに来たわけでは…\n
+					やっぱり帰ります！！");//文字描画
+
+			DeleteMusic(GetCurrentScriptDirectory~"\bgm\5-1.wav");
+			PlayMusic(GetCurrentScriptDirectory~"\bgm\5-2.wav");
+
+			graphicLEFT(7);
+			graphicRIGHT(1);
+			MoveChar(LEFT,BACK);
+			MoveChar(RIGHT,FRONT);
+			TextOutC(40,"\c[RED]おっとっと、逃がさんぞ？\n
+					お前は魔王の大事なお客さんだからな");//文字描画
+
+			graphicRIGHT(2);
+			TextOut("\c[RED]そして底につくまでは俺と遊んでもらう！\n
+					さあ、弾幕の用意はいいか！？");//文字描画
+
+			SetStep(3);
+			}
+
+			End();//最後にEnd()は必須
+		}
+
+function graphicLEFT(num){
+	if(num==1){SetGraphicRect(LEFT,0,0,249,319);}//真顔
+	else if(num==2){SetGraphicRect(LEFT,250,0,499,319);}//おこ
+	else if(num==3){SetGraphicRect(LEFT,500,0,749,319);}//嬉しい
+	else if(num==4){SetGraphicRect(LEFT,750,0,999,319);}//引き
+	else if(num==5){SetGraphicRect(LEFT,0,320,249,640);}//びっくり
+	else if(num==6){SetGraphicRect(LEFT,250,320,499,640);}//気づく
+	else if(num==7){SetGraphicRect(LEFT,500,320,749,640);}//キラ
+	else if(num==8){SetGraphicRect(LEFT,750,320,999,640);}//悪い顔
+}
+	
+function graphicRIGHT(num){
+	if(num==1){SetGraphicRect(RIGHT,0,0,250,320);}//真顔
+	else if(num==2){SetGraphicRect(RIGHT,250,0,500,320);}//喜び
+	else if(num==3){SetGraphicRect(RIGHT,500,0,750,320);}//爆笑
+	else if(num==4){SetGraphicRect(RIGHT,750,0,1000,320);}//ボロ絵
+}
+		
+		@Finalize
+		{
+		DeleteGraphic(imgSHEN);
+		DeleteGraphic(imgRYU);
+		DeleteGraphic(imgGALD);
+		}
+	}

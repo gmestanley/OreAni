@@ -1,0 +1,310 @@
+	#Player[FREE]
+	#ScriptVersion[2]
+
+	script_enemy_main
+	{
+let step=0;
+let dCX=0;
+gra=1;
+let char=6;
+let alpha=0;
+
+@Initialize()
+	{
+	SetLife(1);ForbidShot(true);ForbidBomb(true);
+	LoadGraphic(imgBoss);//ドット絵の読み込み
+	SetTexture(imgBoss);//読み込んだ画像を指定する
+	CreateEventFromScript("Event");
+	}
+
+@MainLoop(){
+	if(OnEvent==true){step=GetEventStep();
+		if(step == 0){
+		SetX(minX-50);
+		SetY(minY+60);
+		}
+		if(step == 1){
+		SetX(cenX);
+		SetY(minY+130);
+		}
+		if(step == 2){
+		yield;
+		}
+		if(step == 3){
+		VanishEnemy;
+		}
+	}
+}
+
+@DrawLoop{
+	if(step==1){
+        SetTexture(imgBoss);
+		SetGraphicAngle(0, 0, 0);
+		SetAlpha(dCX);
+		SetRenderState(ADD);
+		SetColor(dCX,dCX,dCX);	
+		SetGraphicExpansion(1,1);
+		setGraphicRight;
+		DrawGraphic(GetX, GetY);//ボスの座標に画像を描画
+		if(dCX<=254){dCX+=255/60;}
+	}
+
+if(step>=2){Graphic;}
+}
+
+@Finalize(){
+	DeleteGraphic(imgBoss);//画像をメモリから解放
+	ForbidShot(false);ForbidBomb(false);
+}
+
+	#include_function ".\include.txt"
+}
+	
+
+	script_event Event
+	{
+
+	let imgSHEN=GetCurrentScriptDirectory~".\img\shencut.png";
+	let imgRYU=GetCurrentScriptDirectory~".\img\ryucut.png";
+	let imgLINU=GetCurrentScriptDirectory~".\img\linuscut.png";
+
+		@Initialize
+		{
+		LoadGraphic(imgSHEN);//自機カット読み込み
+		LoadGraphic(imgRYU);//自機カット読み込み
+		LoadGraphic(imgLINU);
+		LoadSE(GetCurrentScriptDirectory~"\SE\mecha03.wav");
+		}
+		
+		@MainLoop
+		{
+
+			SetStep(0);
+
+
+			if(GetPlayerScriptName=="sh2.txt"){//シェン会話
+			SetChar(LEFT,imgSHEN);
+			graphicLEFT(3);
+			MoveChar(LEFT,FRONT);
+			TextOut("\c[YELLOW]出てこい魔王！！\n
+					けちょんけちょんにしてやる！！");//文字描画
+
+			SetStep(1);
+			PlaySE(GetCurrentScriptDirectory~"\SE\mecha03.wav");
+			Wait(60);		
+			SetStep(2);
+
+			SetChar(RIGHT,imgLINU);//右側キャラクタの画像を設定
+			graphicRIGHT(1);
+			MoveChar(RIGHT,FRONT);
+			graphicLEFT(1);
+			MoveChar(LEFT,BACK);
+			TextOutC(60,"\c[RED]ついに来たか！！\n
+					待っていたぞ！！");//文字描画
+
+			graphicLEFT(1);
+
+			SetNameFromText(RIGHT,TEXT_RED,"ライナス","光り輝く新魔王");
+			TextOut("\c[RED]よくぞここまで辿り着いた！！\n
+					我こそこの地獄の王、ライナスである！");//文字描画
+
+			MoveChar(RIGHT,BACK);
+			MoveChar(LEFT,FRONT);
+			graphicLEFT(3);
+			TextOut("\c[YELLOW]よっしゃ、お前を倒して心臓食べ放題だ！\n
+					死ぬがよい！！");//文字描画
+
+			MoveChar(RIGHT,FRONT);
+			MoveChar(LEFT,BACK);
+			graphicLEFT(1);
+			graphicRIGHT(3);
+			TextOut("\c[RED]フハハハ、そうかそうか\n
+					お前の望みはそれか！！");//文字描画
+
+			graphicLEFT(5);
+			graphicRIGHT(3);
+			TextOut("\c[RED]もし俺様の配下になるなら\n
+					そんな臓器、死ぬほどくれてやろう");//文字描画
+
+			MoveChar(RIGHT,BACK);
+			MoveChar(LEFT,FRONT);
+			graphicLEFT(3);
+			TextOut("\c[YELLOW]マジで！？\n
+					なるなる！！");//文字描画
+
+			graphicLEFT(2);
+			TextOut("\c[YELLOW]って、その手には乗らんぞ！\n
+					どうせだます気だろ");//文字描画
+
+
+			MoveChar(RIGHT,FRONT);
+			MoveChar(LEFT,BACK);
+			graphicLEFT(1);
+			graphicRIGHT(2);
+			TextOut("\c[RED]悪魔 ウソ ツカナイ\n
+					コレ ホント");//文字描画
+
+			MoveChar(RIGHT,BACK);
+			MoveChar(LEFT,FRONT);
+			graphicLEFT(4);
+			TextOut("\c[YELLOW]すげーウソっぽいんですが\n
+					まあいいや");//文字描画
+
+			graphicLEFT(3);
+			TextOut("\c[YELLOW]とにかく、おれはお前を倒して\n
+					心臓をガッポリもらうんだ！！");//文字描画
+
+
+			MoveChar(RIGHT,FRONT);
+			MoveChar(LEFT,BACK);
+			graphicLEFT(1);
+			graphicRIGHT(1);
+			TextOut("\c[RED]ふむ、残念だ\n
+					まあよい");//文字描画
+
+			DeleteMusic(GetCurrentScriptDirectory~"\bgm\6-1.wav");
+			PlayMusic(GetCurrentScriptDirectory~"\bgm\6-2.wav");
+
+			graphicLEFT(6);
+			graphicRIGHT(4);
+			TextOutC(60,"\c[RED]俺様は魔王ライナス\n
+					この深く底知れぬ地獄を統べる者");//文字描画
+
+			TextOut("\c[RED]天の国より訪れし小さな神よ\n
+					我が呪われし閃光で葬り去ってやろう！");//文字描画			
+
+			SetStep(3);
+			End();//最後にEnd()は必須
+			}
+
+			if(GetPlayerScriptName=="ryu.txt"){//リュー会話
+			SetChar(LEFT,imgRYU);
+			graphicLEFT(1);
+			MoveChar(LEFT,FRONT);
+			TextOut("\c[BLUE]結局ここまで来てしまった\n
+					魔王はこのあたりか？");//文字描画
+
+			SetStep(1);
+			PlaySE(GetCurrentScriptDirectory~"\SE\mecha03.wav");
+			Wait(60);		
+			SetStep(2);
+
+			SetChar(RIGHT,imgLINU);//右側キャラクタの画像を設定
+			MoveChar(RIGHT,FRONT);
+			graphicRIGHT(1);
+			graphicLEFT(6);
+			MoveChar(LEFT,BACK);
+			TextOutC(60,"\c[RED]ついに来たか！！\n
+					待っていたぞ！！");//文字描画
+
+			graphicRIGHT(3);
+			MoveChar(RIGHT,FRONT);
+			TextOut("\c[RED]待ちくたびれて、危うくこっちから\n
+					出向くところだったわ！ハッハッハッハ！");//文字描画
+
+
+			MoveChar(RIGHT,BACK);
+			MoveChar(LEFT,FRONT);
+			graphicLEFT(1);
+			TextOut("\c[BLUE]お前が魔王だな\n
+					見た目がそれっぽい");//文字描画
+
+			MoveChar(RIGHT,FRONT);
+			MoveChar(LEFT,BACK);
+			graphicLEFT(1);
+			graphicRIGHT(1);
+
+			SetNameFromText(RIGHT,TEXT_RED,"ライナス","光り輝く新魔王");
+			TextOut("\c[RED]如何にも俺様が魔王だ\n
+					地獄の旅は楽しめたかな？");//文字描画
+
+			MoveChar(RIGHT,BACK);
+			MoveChar(LEFT,FRONT);
+			graphicLEFT(5);
+			TextOut("\c[BLUE]それなりに楽しめたけど\n
+					ずっといたいとは思いませんでした");//文字描画
+
+			MoveChar(RIGHT,FRONT);
+			MoveChar(LEFT,BACK);
+			graphicLEFT(1);
+			graphicRIGHT(2);
+			TextOut("\c[RED]ふむ…それは残念だ\n
+					ここがお前の終の棲家になるというのに");//文字描画
+
+			MoveChar(RIGHT,BACK);
+			MoveChar(LEFT,FRONT);
+			graphicLEFT(7);
+			TextOut("\c[BLUE]何？\n
+					どういうことだ？");//文字描画
+
+			MoveChar(RIGHT,FRONT);
+			MoveChar(LEFT,BACK);
+			graphicLEFT(7);
+			graphicRIGHT(2);
+			TextOut("\c[RED]お前には俺様の配下になってもらう\n
+					これもう決定事項だから");//文字描画
+
+			MoveChar(RIGHT,BACK);
+			MoveChar(LEFT,FRONT);
+			graphicLEFT(5);
+			TextOut("\c[BLUE]え、いやです");//文字描画
+
+			MoveChar(RIGHT,FRONT);
+			MoveChar(LEFT,BACK);
+			graphicRIGHT(3);
+			TextOut("\c[RED]フハハ、遠慮するな！\n
+					なんでも欲しいものをくれてやるぞ？");//文字描画
+
+			MoveChar(RIGHT,BACK);
+			MoveChar(LEFT,FRONT);
+			graphicLEFT(5);
+			TextOut("\c[BLUE]いやそういうのいいんで、\n
+					もう帰ります");//文字描画
+
+			MoveChar(RIGHT,FRONT);
+			MoveChar(LEFT,BACK);
+			graphicRIGHT(1);
+			TextOut("\c[RED]俺様の誘いを断るとは…\n
+					ますます気に入った！");//文字描画
+
+			DeleteMusic(GetCurrentScriptDirectory~"\bgm\6-1.wav");
+			PlayMusic(GetCurrentScriptDirectory~"\bgm\6-2.wav");
+
+			graphicLEFT(6);
+			graphicRIGHT(4);
+			TextOutC(60,"\c[RED]俺様は魔王ライナス\n
+					この深く底知れぬ地獄を統べる者");//文字描画
+
+			TextOut("\c[RED]天の国より訪れし小さな神よ\n
+					我が恐怖の威光にひれ伏すがいい！");//文字描画			
+
+			SetStep(3);
+			End();//最後にEnd()は必須
+			}
+		}
+		
+function graphicLEFT(num){
+	if(num==1){SetGraphicRect(LEFT,0,0,249,319);}//真顔
+	else if(num==2){SetGraphicRect(LEFT,250,0,499,319);}//おこ
+	else if(num==3){SetGraphicRect(LEFT,500,0,749,319);}//嬉しい
+	else if(num==4){SetGraphicRect(LEFT,750,0,999,319);}//引き
+	else if(num==5){SetGraphicRect(LEFT,0,320,249,640);}//びっくり
+	else if(num==6){SetGraphicRect(LEFT,250,320,499,640);}//気づく
+	else if(num==7){SetGraphicRect(LEFT,500,320,749,640);}//キラ
+	else if(num==8){SetGraphicRect(LEFT,750,320,999,640);}//悪い顔
+}
+	
+function graphicRIGHT(num){
+	if(num==1){SetGraphicRect(RIGHT,0,0,250,320);}//真顔
+	else if(num==2){SetGraphicRect(RIGHT,250,0,500,320);}//喜び
+	else if(num==3){SetGraphicRect(RIGHT,500,0,750,320);}//爆笑
+	else if(num==4){SetGraphicRect(RIGHT,750,0,1000,320);}//ボロ絵
+}
+		
+		@Finalize
+		{
+		DeleteGraphic(imgSHEN);
+		DeleteGraphic(imgRYU);
+		DeleteGraphic(imgLINU);
+		}
+	}

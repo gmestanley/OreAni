@@ -1,0 +1,289 @@
+	#Player[FREE]
+	#ScriptVersion[2]
+
+	script_enemy_main
+	{
+let step=0;
+let dCX=0;
+gra=1;
+let char=4;
+let alpha=0;
+
+@Initialize()
+	{
+	SetLife(1);ForbidShot(true);ForbidBomb(true);
+	LoadGraphic(imgBoss);//ドット絵の読み込み
+	SetTexture(imgBoss);//読み込んだ画像を指定する
+	CreateEventFromScript("Event");
+	}
+
+@MainLoop(){
+	if(OnEvent==true){step=GetEventStep();
+		if(step == 0){
+		SetX(minX-50);
+		SetY(minY+60);
+		}
+		if(step == 1){
+		SetX(cenX);
+		SetY(minY+130);
+		}
+		if(step == 2){
+		yield;
+		}
+		if(step == 3){
+		VanishEnemy;
+		}
+	}
+}
+
+@DrawLoop{
+	if(step==1){
+        SetTexture(imgBoss);
+		SetGraphicAngle(0, 0, 0);
+		SetAlpha(dCX);
+		SetRenderState(ADD);
+		SetColor(dCX,dCX,dCX);	
+		SetGraphicExpansion(1,1);
+		setGraphicRight;
+		DrawGraphic(GetX, GetY);//ボスの座標に画像を描画
+		if(dCX<=254){dCX+=255/60;}
+	}
+
+if(step>=2){Graphic;}
+}
+
+@Finalize(){
+	DeleteGraphic(imgBoss);//画像をメモリから解放
+	ForbidShot(false);ForbidBomb(false);
+}
+
+	#include_function ".\include.txt"
+}
+	
+
+	script_event Event
+	{
+
+	let imgSHEN=GetCurrentScriptDirectory~".\img\shencut.png";
+	let imgRYU=GetCurrentScriptDirectory~".\img\ryucut.png";
+	let imgRECO=GetCurrentScriptDirectory~".\img\recocut.png";
+
+		@Initialize
+		{
+		LoadSE(GetCurrentScriptDirectory~"\SE\mecha03.wav");
+		LoadGraphic(imgSHEN);//自機カット読み込み
+		LoadGraphic(imgRYU);//自機カット読み込み
+		LoadGraphic(imgRECO);
+		}
+		
+		@MainLoop
+		{
+
+
+
+			if(GetPlayerScriptName=="sh2.txt"){//シェン会話
+			SetStep(0);
+
+			SetChar(LEFT,imgSHEN);//右側キャラクタの画像を設定
+			graphicLEFT(1);
+			MoveChar(LEFT,FRONT);
+			TextOut("\c[YELLOW]さっきから風景が変わらない\n
+					悪魔のしわざだな？");//文字描画
+
+			SetStep(1);
+			PlaySE(GetCurrentScriptDirectory~"\SE\mecha03.wav");
+			Wait(60);		
+			SetStep(2);
+
+
+			MoveChar(LEFT,BACK);
+			graphicLEFT(6);
+			SetChar(RIGHT,imgRECO);//右側キャラクタの画像を設定
+			graphicRIGHT(1);
+			MoveChar(RIGHT,FRONT);
+			TextOutC(60,"\c[RED]ご名答\n
+					私の力で廊下を循環させています");//文字描画
+
+			graphicLEFT(4);
+			MoveChar(LEFT,FRONT);
+			MoveChar(RIGHT,BACK);
+			TextOut("\c[YELLOW]あっさりタネをばらされて\n
+					拍子抜けだなー");//文字描画
+
+			graphicLEFT(1);
+			MoveChar(LEFT,BACK);
+			MoveChar(RIGHT,FRONT);
+			SetNameFromText(RIGHT,TEXT_RED,"レコル","冥界の冥医");
+			TextOut("\c[RED]魔王さまに楯突こうとする神様は\n
+					あなたね");//文字描画
+
+			graphicLEFT(3);
+			MoveChar(LEFT,FRONT);
+			MoveChar(RIGHT,BACK);
+			TextOut("\c[YELLOW]その通り！\n
+					邪魔すると女子でも容赦しないぞ！");//文字描画
+
+			graphicLEFT(1);
+			MoveChar(LEFT,BACK);
+			graphicRIGHT(3);
+			MoveChar(RIGHT,FRONT);
+			TextOut("\c[RED]邪魔する気はあんまりないよ\n
+					魔王さまは別にどうでもいいし");//文字描画
+
+			graphicRIGHT(1);
+			TextOut("\c[RED]それより、さっきからあなたを観察してて\n
+					興味が沸いたんだ");//文字描画
+
+			graphicLEFT(3);
+			MoveChar(LEFT,FRONT);
+			MoveChar(RIGHT,BACK);
+			TextOut("\c[YELLOW]ほう…もしかして\n
+					おれの信者になりたいとか？");//文字描画
+
+			DeleteMusic(GetCurrentScriptDirectory~"\bgm\4-1.wav");
+			PlayMusic(GetCurrentScriptDirectory~"\bgm\4-2.wav");
+
+			graphicLEFT(5);
+			MoveChar(LEFT,BACK);
+			graphicRIGHT(2);
+			MoveChar(RIGHT,FRONT);
+			TextOutC(40,"\c[RED]や、神様って\n
+					バラバラにするとどうなるんだろうって");//文字描画
+
+			graphicLEFT(5);
+			MoveChar(LEFT,FRONT);
+			MoveChar(RIGHT,BACK);
+			TextOut("\c[YELLOW]あ、これヤバイやつだ\n
+					だれかーだれかー");//文字描画
+
+			MoveChar(LEFT,BACK);
+			graphicRIGHT(2);
+			MoveChar(RIGHT,FRONT);
+			TextOut("\c[RED]大丈夫、痛いのは一瞬だけ\n
+					だから暴れないでね！！");//文字描画
+
+			SetStep(3);
+			End();//最後にEnd()は必須
+			}
+
+			if(GetPlayerScriptName=="ryu.txt"){//リュー会話
+			SetStep(0);
+
+
+			SetChar(LEFT,imgRYU);//右側キャラクタの画像を設定
+			graphicLEFT(1);
+			MoveChar(LEFT,FRONT);
+			TextOut("\c[BLUE]おかしいなー\n
+					いつまでたっても廊下が終わらない");//文字描画
+
+			graphicLEFT(5);
+			TextOut("\c[BLUE]やっぱり…\n
+					悪魔の仕業？");//文字描画
+
+			SetStep(1);
+			PlaySE(GetCurrentScriptDirectory~"\SE\mecha03.wav");
+			Wait(60);		
+			SetStep(2);
+
+
+			MoveChar(LEFT,BACK);
+			graphicLEFT(6);
+			SetChar(RIGHT,imgRECO);//右側キャラクタの画像を設定
+			graphicRIGHT(1);
+			MoveChar(RIGHT,FRONT);
+			TextOutC(60,"\c[RED]ご名答\n
+					私の力で廊下を循環させています");//文字描画
+
+			graphicLEFT(4);
+			MoveChar(LEFT,FRONT);
+			MoveChar(RIGHT,BACK);
+			TextOut("\c[BLUE]だと思っ…\n
+					って、女の子だと！？");//文字描画
+
+			MoveChar(LEFT,BACK);
+			MoveChar(RIGHT,FRONT);
+			SetNameFromText(RIGHT,TEXT_RED,"レコル","冥界の冥医");
+			TextOut("\c[RED]魔王さまに楯突こうとする神様は\n
+					あなたね");//文字描画
+
+			graphicRIGHT(3);
+			TextOut("\c[RED]まあ、邪魔する気はあんまりないよ\n
+					魔王さまは別にどうでもいいし");//文字描画
+
+			graphicLEFT(4);
+			MoveChar(LEFT,FRONT);
+			MoveChar(RIGHT,BACK);
+			TextOut("\c[BLUE]え？\n
+					あ、そ、そうなんですか");//文字描画
+
+			graphicRIGHT(1);
+			MoveChar(LEFT,BACK);
+			MoveChar(RIGHT,FRONT);
+			TextOut("\c[RED]それより、さっきからあなたを観察してて\n
+					興味が沸いたんだ");//文字描画
+
+			graphicLEFT(4);
+			MoveChar(LEFT,FRONT);
+			MoveChar(RIGHT,BACK);
+			TextOut("\c[BLUE]ほえええ！？！？\n
+					きょ、興味ってそれは…");//文字描画
+
+			DeleteMusic(GetCurrentScriptDirectory~"\bgm\4-1.wav");
+			PlayMusic(GetCurrentScriptDirectory~"\bgm\4-2.wav");
+
+			MoveChar(LEFT,BACK);
+			graphicRIGHT(2);
+			MoveChar(RIGHT,FRONT);
+			TextOutC(40,"\c[RED]神様って\n
+					バラバラにするとどうなるんだろうって");//文字描画
+
+			graphicLEFT(7);
+			MoveChar(LEFT,FRONT);
+			MoveChar(RIGHT,BACK);
+			TextOut("\c[BLUE]え、それってどういう");//文字描画
+
+			graphicLEFT(5);
+			MoveChar(LEFT,BACK);
+			MoveChar(RIGHT,FRONT);
+			TextOut("\c[RED]大丈夫、痛いのは一瞬だけ\n
+					だから暴れないでね！！");//文字描画
+
+			SetStep(3);
+			End();//最後にEnd()は必須
+			}
+		}
+
+function graphicLEFT(num){
+	if(num==1){SetGraphicRect(LEFT,0,0,249,319);}//真顔
+	else if(num==2){SetGraphicRect(LEFT,250,0,499,319);}//おこ
+	else if(num==3){SetGraphicRect(LEFT,500,0,749,319);}//嬉しい
+	else if(num==4){SetGraphicRect(LEFT,750,0,999,319);}//引き
+	else if(num==5){SetGraphicRect(LEFT,0,320,249,640);}//びっくり
+	else if(num==6){SetGraphicRect(LEFT,250,320,499,640);}//気づく
+	else if(num==7){SetGraphicRect(LEFT,500,320,749,640);}//キラ
+	else if(num==8){SetGraphicRect(LEFT,750,320,999,640);}//悪い顔
+}
+	
+function graphicLEFTR(num){
+	if(num==1){SetGraphicRect(LEFT,0,0,249,319);}//真顔
+	else if(num==2){SetGraphicRect(LEFT,250,0,499,319);}//嬉しい
+	else if(num==3){SetGraphicRect(LEFT,500,0,749,319);}//おこ
+	else if(num==4){SetGraphicRect(LEFT,750,0,999,319);}//照れ
+	else if(num==5){SetGraphicRect(LEFT,0,320,249,640);}//引き
+	else if(num==6){SetGraphicRect(LEFT,250,320,499,640);}//気づく
+	else if(num==7){SetGraphicRect(LEFT,500,320,749,640);}//ビックリ
+	else if(num==8){SetGraphicRect(LEFT,750,320,999,640);}//悪い顔
+}
+
+function graphicRIGHT(num){
+	if(num==1){SetGraphicRect(RIGHT,0,0,250,320);}//真顔
+	else if(num==2){SetGraphicRect(RIGHT,250,0,500,320);}//喜び
+	else if(num==3){SetGraphicRect(RIGHT,500,0,750,320);}//もよん
+	else if(num==4){SetGraphicRect(RIGHT,750,0,1000,320);}//ボロ絵
+}
+		
+		@Finalize
+		{
+
+		}
+	}

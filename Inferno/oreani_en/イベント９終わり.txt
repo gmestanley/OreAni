@@ -1,0 +1,268 @@
+
+
+script_enemy_main
+	{
+let count = 0;
+let step=0;
+gra=1;
+let char=9;
+
+
+@Initialize()
+	{
+	SetLife(1);ForbidShot(true);ForbidBomb(true);
+	SetGraphicRect(0,0,64,64);
+	}
+
+@MainLoop()
+	{
+	if(OnEvent()==true){break;}
+	if(GetSpeed!=0){break;}
+	if(count == 1)
+		{}
+	if(count == 2)
+		{
+		//SetMovePosition02(cx+1,145,80);
+          	CreateEventFromScript("Event1end");
+		}
+	if(count == 3)
+		{
+		VanishEnemy;
+		}
+	count++;
+	}
+
+@DrawLoop{
+Graphic;
+}
+
+@Finalize(){
+	DeleteGraphic(imgBoss);//画像をメモリから解放
+	ForbidShot(false);ForbidBomb(false);
+}
+
+#include_function ".\include.txt"
+}
+	
+
+	script_event Event1end
+	{
+
+	let imgSHEN=GetCurrentScriptDirectory~".\img\shencut.png";
+	let imgRYU=GetCurrentScriptDirectory~".\img\ryucut.png";
+	let imgLILIA=GetCurrentScriptDirectory~".\img\liliacut.png";
+	let imgLINUS=GetCurrentScriptDirectory~".\img\linuscut.png";
+
+		@Initialize
+		{
+		LoadGraphic(imgSHEN);//自機カット読み込み
+		LoadGraphic(imgRYU);//自機カット読み込み
+		LoadGraphic(imgLILIA);
+		LoadGraphic(imgLINUS);
+		}
+		
+		@MainLoop
+		{
+
+			if(GetPlayerScriptName=="sh2.txt"){//シェン会話
+
+			SetChar(LEFT,imgSHEN);//右側キャラクタの画像を設定
+			graphicLEFT(1);
+			MoveChar(LEFT,BACK);
+			SetChar(RIGHT,imgLILIA);//右側キャラクタの画像を設定
+			graphicRIGHT(4);
+			MoveChar(RIGHT,FRONT);
+			TextOut("\c[RED]お兄様あああああああ！！");//文字描画
+
+			graphicLEFT(4);
+			MoveChar(LEFT,FRONT);
+			MoveChar(RIGHT,BACK);
+			TextOut("\c[YELLOW]このおれとしたことが\n
+					危ないところだった");//文字描画
+
+			graphicLEFT(1);
+			MoveChar(LEFT,BACK);
+			MoveChar(RIGHT,FRONT);
+			TextOut("\c[RED]わたしはこんなにお兄様を愛しているのに\n
+					どうして愛してくれないの…？");//文字描画
+
+			graphicLEFT(3);
+			MoveChar(LEFT,FRONT);
+			MoveChar(RIGHT,BACK);
+			TextOut("\c[YELLOW]普通にしてればいいんじゃないかな\n
+					普通に");//文字描画
+
+			SetChar(RIGHT,imgLINUS);//右側キャラクタの画像を設定
+			graphicLEFT(1);
+			graphicRIGHT2(2);
+			MoveChar(LEFT,BACK);
+			MoveChar(RIGHT,FRONT);
+			TextOut("\c[RED]こんなとこにいたのか、シェン太\n
+					ずいぶん遅かったな");//文字描画
+
+			graphicRIGHT2(3);
+			MoveChar(RIGHT,FRONT);
+			TextOut("\c[RED]ってリリア！？\n
+					なぜここに！？");//文字描画
+
+			SetChar(RIGHT,imgLILIA);//右側キャラクタの画像を設定
+			graphicRIGHT(4);
+			MoveChar(RIGHT,FRONT);
+			TextOut("\c[RED]お兄様！！\n
+					わたしのピンチに駆けつけてくれたのね！");//文字描画
+
+			SetChar(RIGHT,imgLINUS);//右側キャラクタの画像を設定
+			graphicRIGHT2(3);
+			TextOut("\c[RED]え、違…");//文字描画
+
+			graphicLEFT(3);
+			MoveChar(LEFT,FRONT);
+			MoveChar(RIGHT,BACK);
+			TextOut("\c[YELLOW]お前が妹を放っといたせいで\n
+					ひどい目にあった　だから責任とれ！！");//文字描画
+
+
+			SetChar(RIGHT,imgLILIA);//右側キャラクタの画像を設定
+			graphicRIGHT(4);
+			MoveChar(LEFT,BACK);
+			MoveChar(RIGHT,FRONT);
+			TextOut("\c[RED]責任をとる！？\n
+					じゃあ、責任をとって早速結婚しましょ！！");//文字描画
+
+
+			SetChar(RIGHT,imgLINUS);//右側キャラクタの画像を設定
+			graphicRIGHT2(3);
+			TextOut("\c[RED]そ、それはできん！！\n
+					ネロ！　俺様を助けろー！！");//文字描画
+
+
+			SetChar(RIGHT,imgLILIA);//右側キャラクタの画像を設定
+			graphicRIGHT(4);
+			MoveChar(LEFT,BACK);
+			MoveChar(RIGHT,FRONT);
+			TextOut("\c[RED]あ、どこいくの！？\n
+					お兄様、待って～");//文字描画
+
+			DeleteChar(RIGHT);
+
+			graphicLEFT(4);
+			MoveChar(LEFT,FRONT);
+			MoveChar(RIGHT,BACK);
+			TextOut("\c[YELLOW]あー、久しぶりにどっと疲れた");//文字描画
+
+			graphicLEFT(5);
+			MoveChar(LEFT,FRONT);
+			MoveChar(RIGHT,BACK);
+			TextOut("\c[YELLOW]っていうかおれの心臓！！\n
+					まだもらってないぞー！！！！");//文字描画
+			}
+
+
+			if(GetPlayerScriptName=="ryu.txt"){//リュー会話
+
+			SetChar(LEFT,imgRYU);//右側キャラクタの画像を設定
+			graphicLEFT(1);
+			MoveChar(LEFT,BACK);
+			SetChar(RIGHT,imgLILIA);//右側キャラクタの画像を設定
+			graphicRIGHT(4);
+			MoveChar(RIGHT,FRONT);
+			TextOut("\c[RED]お兄様あああああああ！！");//文字描画
+
+			graphicLEFT(5);
+			MoveChar(LEFT,FRONT);
+			MoveChar(RIGHT,BACK);
+			TextOut("\c[BLUE]…\n
+					ブラコンって怖いなあ…");//文字描画
+
+			MoveChar(LEFT,BACK);
+			MoveChar(RIGHT,FRONT);
+			TextOut("\c[RED]わたしはこんなにお兄様を愛しているのに\n
+					どうして愛してくれないの…？");//文字描画
+
+			graphicLEFT(5);
+			MoveChar(LEFT,FRONT);
+			MoveChar(RIGHT,BACK);
+			TextOut("\c[BLUE]そういうのが兄妹関係として\n
+					不適切なんじゃ…");//文字描画
+
+
+			graphicLEFT(1);
+			SetChar(RIGHT,imgLINUS);//右側キャラクタの画像を設定
+			graphicRIGHT2(2);
+			MoveChar(LEFT,BACK);
+			MoveChar(RIGHT,FRONT);
+			TextOut("\c[RED]こんなとこにいたのか、リューすけ\n
+					ずいぶん遅かったな");//文字描画
+
+			graphicRIGHT2(3);
+			MoveChar(RIGHT,FRONT);
+			TextOut("\c[RED]ってリリア！？\n
+					なぜここに！？");//文字描画
+
+			SetChar(RIGHT,imgLILIA);//右側キャラクタの画像を設定
+			graphicRIGHT(4);
+			MoveChar(RIGHT,FRONT);
+			TextOut("\c[RED]お兄様！！\n
+					わたしのピンチに駆けつけてくれたのね！");//文字描画
+
+			TextOut("\c[RED]さあ、結婚しましょう！！");//文字描画
+
+			SetChar(RIGHT,imgLINUS);//右側キャラクタの画像を設定
+			graphicRIGHT2(3);
+			TextOut("\c[RED]実の妹と結婚などできるか！！\n
+					やめろ！！離せ！！");//文字描画
+
+			TextOut("\c[RED]ネロ！！どこにいる！？\n
+					早く出てきて俺様を助けろ！！");//文字描画
+
+			DeleteChar(RIGHT);
+	
+			TextOut("\c[RED]ネロ！！　ネローッ！！");//文字描画
+
+			graphicLEFT(8);
+			MoveChar(LEFT,FRONT);
+			MoveChar(RIGHT,BACK);
+			TextOut("\c[BLUE](道すがら撃ち落としたなんて言えない)");//文字描画
+
+			graphicLEFT(5);
+			TextOut("\c[BLUE]あー、地獄ってホント愉快な場所だな\n
+					うん");//文字描画
+		
+			}
+
+			End();//最後にEnd()は必須
+		}
+		
+
+function graphicLEFT(num){
+	if(num==1){SetGraphicRect(LEFT,0,0,249,319);}//真顔
+	else if(num==2){SetGraphicRect(LEFT,250,0,499,319);}//おこ
+	else if(num==3){SetGraphicRect(LEFT,500,0,749,319);}//嬉しい
+	else if(num==4){SetGraphicRect(LEFT,750,0,999,319);}//引き
+	else if(num==5){SetGraphicRect(LEFT,0,320,249,640);}//びっくり
+	else if(num==6){SetGraphicRect(LEFT,250,320,499,640);}//気づく
+	else if(num==7){SetGraphicRect(LEFT,500,320,749,640);}//キラ
+	else if(num==8){SetGraphicRect(LEFT,750,320,999,640);}//悪い顔
+}
+	
+function graphicRIGHT(num){
+	if(num==1){SetGraphicRect(RIGHT,0,0,250,320);}//真顔
+	else if(num==2){SetGraphicRect(RIGHT,250,0,500,320);}//喜び
+	else if(num==3){SetGraphicRect(RIGHT,500,0,750,320);}//爆笑
+	else if(num==4){SetGraphicRect(RIGHT,750,0,1000,320);}//ボロ絵
+}
+
+function graphicRIGHT2(num){
+	if(num==1){SetGraphicRect(RIGHT,0,0,250,320);}//真顔
+	else if(num==2){SetGraphicRect(RIGHT,250,0,500,320);}//喜び
+	else if(num==3){SetGraphicRect(RIGHT,1000,0,1250,320);}//ボロ絵
+}
+		
+		@Finalize
+		{
+		DeleteGraphic(imgSHEN);
+		DeleteGraphic(imgRYU);
+		DeleteGraphic(imgLILIA);
+		DeleteGraphic(imgLINUS);
+		}
+	}

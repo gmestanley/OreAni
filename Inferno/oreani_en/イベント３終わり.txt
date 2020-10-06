@@ -1,0 +1,187 @@
+
+
+script_enemy_main
+	{
+let count = 0;
+let step=0;
+gra=1;
+let char=3;
+
+
+@Initialize()
+	{
+	SetLife(1);ForbidShot(true);ForbidBomb(true);
+	SetGraphicRect(0,0,64,64);
+	}
+
+@MainLoop()
+	{
+	if(OnEvent()==true){break;}
+	if(GetSpeed!=0){break;}
+	if(count == 1)
+		{}
+	if(count == 2)
+		{
+		//SetMovePosition02(cx+1,145,80);
+          	CreateEventFromScript("Event1end");
+		}
+	if(count == 3)
+		{
+		VanishEnemy;
+		}
+	count++;
+	}
+
+@DrawLoop{
+Graphic;
+}
+
+@Finalize(){
+	DeleteGraphic(imgBoss);//画像をメモリから解放
+	ForbidShot(false);ForbidBomb(false);
+}
+
+#include_function ".\include.txt"
+}
+	
+
+	script_event Event1end
+	{
+
+	let imgSHEN=GetCurrentScriptDirectory~".\img\shencut.png";
+	let imgRYU=GetCurrentScriptDirectory~".\img\ryucut.png";
+	let imgKIRU=GetCurrentScriptDirectory~".\img\kirucut.png";
+
+		@Initialize
+		{
+		LoadGraphic(imgSHEN);//自機カット読み込み
+		LoadGraphic(imgRYU);//自機カット読み込み
+		LoadGraphic(imgKIRU);
+		}
+		
+		@MainLoop
+		{
+
+			if(GetPlayerScriptName=="sh2.txt"){//シェン会話
+			SetChar(LEFT,imgSHEN);//右側キャラクタの画像を設定
+			graphicLEFT(7);
+			MoveChar(LEFT,BACK);
+			SetChar(RIGHT,imgKIRU);//右側キャラクタの画像を設定
+			graphicRIGHT(4);
+			MoveChar(RIGHT,FRONT);
+			TextOut("\c[RED]There was no way I could've won\n
+					against a god...");//文字描画
+
+			graphicLEFT(8);
+			MoveChar(LEFT,FRONT);
+			MoveChar(RIGHT,BACK);
+			TextOut("\c[YELLOW]So, where's the Devil?");//文字描画
+
+			MoveChar(LEFT,BACK);
+			MoveChar(RIGHT,FRONT);
+			TextOut("\c[RED]Such a troublesome guy is beyond saving.\n
+					Act properly!");//文字描画
+
+			MoveChar(LEFT,FRONT);
+			MoveChar(RIGHT,BACK);
+			TextOut("\c[YELLOW]Huh? Looks like this garden's plants want light…\n
+					And it's the burning sunlight, too…");//文字描画
+
+			MoveChar(LEFT,BACK);
+			MoveChar(RIGHT,FRONT);
+			TextOut("\c[RED]Th-the Devil is in that castle!!\n
+					That's why the house's plants…");//文字描画
+			
+			graphicLEFT(3);
+			MoveChar(LEFT,FRONT);
+			MoveChar(RIGHT,BACK);
+			TextOut("\c[YELLOW]You're a sensible demon.\n
+					Barely escaped death!!");//文字描画
+
+
+			MoveChar(LEFT,BACK);
+			MoveChar(RIGHT,FRONT);
+			TextOut("\c[RED]Ah, you demonnn-");//文字描画
+			}
+
+
+			else if(GetPlayerScriptName=="ryu.txt"){//リュー会話
+
+			SetChar(LEFT,imgRYU);//右側キャラクタの画像を設定
+			graphicLEFTR(8);
+			MoveChar(LEFT,FRONT);
+			SetChar(RIGHT,imgKIRU);//右側キャラクタの画像を設定
+			graphicRIGHT(4);
+			MoveChar(RIGHT,BACK);
+			TextOut("\c[BLUE]Leave the watering to me!\n
+					バケツひっくり返したような雨を…");//文字描画
+
+			MoveChar(LEFT,BACK);
+			MoveChar(RIGHT,FRONT);
+			TextOut("\c[RED]Refrain from rotting my rooots-");//文字描画
+
+			graphicLEFTR(1);
+			TextOut("\c[RED]So, for what reason did you come to Hell after all?");//文字描画
+
+			graphicLEFTR(2);
+			MoveChar(LEFT,FRONT);
+			MoveChar(RIGHT,BACK);
+			TextOut("\c[BLUE]Uhhh…right,\n
+					exterminating devils.");//文字描画
+
+			MoveChar(LEFT,BACK);
+			MoveChar(RIGHT,FRONT);
+			TextOut("\c[RED]Ahh, got it.\n
+					If it's about Lord Devil, he is in that castle.");//文字描画
+
+			graphicLEFTR(2);
+			MoveChar(LEFT,FRONT);
+			MoveChar(RIGHT,BACK);
+			TextOut("\c[BLUE]こりゃ親切にどうも\n
+					それじゃあこれにて");//文字描画
+
+
+			MoveChar(LEFT,BACK);
+			MoveChar(RIGHT,FRONT);
+			TextOut("\c[RED]Huuh, returning to the job?");//文字描画
+			}
+
+			End();//最後にEnd()は必須
+		}
+
+function graphicLEFT(num){
+	if(num==1){SetGraphicRect(LEFT,0,0,249,319);}//真顔
+	else if(num==2){SetGraphicRect(LEFT,250,0,499,319);}//おこ
+	else if(num==3){SetGraphicRect(LEFT,500,0,749,319);}//嬉しい
+	else if(num==4){SetGraphicRect(LEFT,750,0,999,319);}//引き
+	else if(num==5){SetGraphicRect(LEFT,0,320,249,640);}//びっくり
+	else if(num==6){SetGraphicRect(LEFT,250,320,499,640);}//気づく
+	else if(num==7){SetGraphicRect(LEFT,500,320,749,640);}//キラ
+	else if(num==8){SetGraphicRect(LEFT,750,320,999,640);}//悪い顔
+}
+		
+function graphicLEFTR(num){
+	if(num==1){SetGraphicRect(LEFT,0,0,249,319);}//真顔
+	else if(num==2){SetGraphicRect(LEFT,250,0,499,319);}//嬉しい
+	else if(num==3){SetGraphicRect(LEFT,500,0,749,319);}//おこ
+	else if(num==4){SetGraphicRect(LEFT,750,0,999,319);}//照れ
+	else if(num==5){SetGraphicRect(LEFT,0,320,249,640);}//引き
+	else if(num==6){SetGraphicRect(LEFT,250,320,499,640);}//気づく
+	else if(num==7){SetGraphicRect(LEFT,500,320,749,640);}//ビックリ
+	else if(num==8){SetGraphicRect(LEFT,750,320,999,640);}//悪い顔
+}
+
+function graphicRIGHT(num){
+	if(num==1){SetGraphicRect(RIGHT,0,0,250,320);}//真顔
+	else if(num==2){SetGraphicRect(RIGHT,250,0,500,320);}//おこ
+	else if(num==3){SetGraphicRect(RIGHT,500,0,750,320);}//ドヤ
+	else if(num==4){SetGraphicRect(RIGHT,750,0,1000,320);}//ボロ絵
+}
+		
+		@Finalize
+		{
+		DeleteGraphic(imgSHEN);
+		DeleteGraphic(imgRYU);
+		DeleteGraphic(imgKIRU);
+		}
+	}
