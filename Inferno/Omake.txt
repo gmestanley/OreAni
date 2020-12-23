@@ -1,11 +1,11 @@
-﻿呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪
+呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪
 
-		Ore no Animism ~Inferno~
+		Ore no Animism ~Hell Chapter~
 						Omake	2014/5/3
 
 呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪祝呪呪呪呪呪呪呪呪呪呪呪呪呪
 
-■Prologue
+■ Prologue
 
 　二柱の神様見習い、Shen and Ryuu.
 　ヒマを持て余した彼らがいつものように面白いことを探していると、
@@ -23,11 +23,11 @@
 　こんな適当な感じで、神様見習いの二柱は地獄へと向かうのだった。
 
 
-■Appearing Characters
+■ Appearing Characters
 
-◯Playable Characters
+◯ Playable Characters
 
-　★Rampant Sun Deity  Shen
+　★ Rampant Sun Deity  Shen
 
 　・Function: Order
 　・Emblem: Mirror
@@ -44,34 +44,34 @@
 　魔王を討伐して、ハツをたらふく食べるのが狙いだが…？
 
 
-　★Storm-Causing God  Ryuu
+　★ Storm-Causing God  Ryuu
 
 　・Function: Chaos
 　・Emblem: Sword
 
-　(Plans to be) God of Storms. 風雨や雷を作り出す権能を持つ。普段は自分が作った蜃気楼でくつろいでいる。
+　(Plans to be) God of Storms. 風雨やlightningを作り出す権能を持つ。普段は自分が作った蜃気楼でくつろいでいる。
 
 　勤勉な性格で文武に秀でており、将来が有望視される神様見習い。
 　しかしその一方で優柔不断な面があり、他人のペースに乗せられてあらぬ行動をとってしまうこともしばしば。
 　シェンにはちょっかいをかけられて怒ることが多いが、なんだかんだで仲良し。
-　弱点は女の子に免疫がないこと。シェン曰く「あいつはむっつりスケベ。間違いない。」
+　弱点は女の子に免疫がないこと。シェン曰く"あいつはむっつりスケベ。I am sure of it."
 
 　地獄なんかで遊んでる場合ではない、と思いつつも、悪魔たちに乗せられてだらっと進んでしまうチョロさを見せる。
 
 　
-◯Small Fry Characters
+◯ Small Fry Characters
 
-　霊魂のみなさん。一応地獄で刑を受けていることになっているが、とてもそんな風には見えない張り付いた笑顔。
-　簡単に潰れるが、しばらくすると経つと復活するので多少強めに叩いても大丈夫。
+　The spirits. 一応地獄で刑を受けていることになっているが、とてもそんな風には見えない張り付いた笑顔。
+　simply潰れるが、しばらくすると経つと復活するので多少強めに叩いても大丈夫。
 　というか撃ち落とされるのも刑の一環だとか。
 　編隊を組んでくるなど、それなりに社会性があるようだ。
 　ちなみに奥に進めば進むほどワルになり、いやらしい弾幕を放ってくる。
 
-◯Stage 1 Boss
+◯ Stage 1 Boss
 
-　★Stray Dog Living Idly 　Ross
+　★ Stray Dog Living Idly 　Ross
 
-　・Ability: Emptiness
+　・Ability: Sloth
 　・Emblem: Shovel
 
 　のんびりした性格で、自由気ままな暮らしを送っている犬っぽい悪魔。
@@ -86,9 +86,9 @@
 　今回の魔王退治に関しては何か知っているようだが、それを明かすことなく調伏されてしまう。
 
 
-◯Stage 2 Boss
+◯ Stage 2 Boss
 
-　★Little Giant that Guards the Gate 　Tarta
+　★ Little Giant that Guards the Gate 　Tarta
 
 　・Ability: Vanity
 　・Emblem: Helmet
@@ -109,14 +109,14 @@
 　わりと悲惨。
 
 
-◯Stage 3 Boss
+◯ Stage 3 Boss
 　
-　★Deep Crimson Gardener 　Kilma
+　★ Deep Crimson Gardener 　Kilma
 
-　・Ability: Nobility
+　・Ability: Pride
 　・Emblem: Rose
 
-　The Tomato-ish looking demon gardener, that administrates the black forest's rose garden.
+　黒い森のバラ園を管理する、トマトっぽい見た目の悪魔庭師。
 
 　地獄の上層にある広大な庭園は、地獄の支配者たる魔王の所有物である。
 　彼は魔王によって直々にこの庭を守り育てる命を受け、毎日せわしなく働いている。
@@ -156,12 +156,12 @@
 
 ◯４面ボス
 　
-　★冥界の冥医　Recole
+　★ Underworldの冥医　Recole
 
 　・権能：循環
-　・象徴：青銅の蛇
+　・象徴：青銅のSnake
 
-　地獄の庭園の最奥にあるさびれたお城に住む、悪魔の女の子。
+　地獄の庭園の最奥にあるさびれたお城に住む、the girl demon.
 　
 　魔王城はその名の通り魔王の居城であると同時に、死者の魂を管理する複合公共施設。
 　循環を司る権能を持つ彼女は、責め苦でボロボロになった魂を癒したり、地獄での刑期を終えた魂を蘇らせる仕事を任されている。
@@ -211,7 +211,7 @@
 　★光り輝くNew Devil　Linus
 
 　・権能：傲慢
-　・象徴：王冠
+　・象徴：Crown
 
 　最近就任した魔王様。あらゆるものに実体を与える権能を持つ。
 　要するに、考えたことが本当になる程度の能力。
@@ -238,63 +238,63 @@
 
 ■ Music
 
-◯Stage 1　「Me And Your Boulevard」
+◯ Stage 1　"Me And Your Boulevard"
 
 	これから地獄に殴りこむにしてはおとなしい、しっとりおっとり系の楽曲です。
 	桜並木をイメージしたつもりが、そんな華やかさは微塵も感じられない曲になってしまいましたが、
 	この若干のアンニュイさが１面にマッチしたような気もします。
 
 
-◯Stage 1 Boss　「Life Hymn of Eat, Sleep and Play」
+◯ Stage 1 Boss　「食う寝る遊ぶの人生賛歌」
 
-	Positive Devildog going down a bad path、Ross' theme.
+	悪い方向にポジティブなデビル犬、Ross' theme.
 	本人のほけーっとした雰囲気の割に激しい曲になっているのは、
 	この曲を作った当時、ロスはもっと子供っぽいキャラという設定だったからなのです。(名前も違った)
 
 
-◯Stage 2　"Welcome to the Hell Avenue"
+◯ Stage 2　"Welcome to the Hell Avenue"
 
 	雨上がりのなんとなくテンションの高い散歩をイメージした楽曲です。
 	ジャジーな感じを目指すもそれ方面の知識がまるでなく諦めた曲でもあります。
-	avenueのわりに建物が全くないのはご愛嬌。
+	アベニューのわりに建物が全くないのはご愛嬌。
 
 
-◯Stage 2 Boss　"Small Gigantomachy"
+◯ Stage 2 Boss　"Small Gigantomachy"
 
 	自分の背丈にコンプレックスを持つちびっ子巨人、Tarta's theme.
 	安直にもティンパニで巨人の進撃をイメージ。ちなみにタルタはマリンバ。
 	ちなみに、巨人族は本当は背の高い種族で、幻術でごまかすのはこの子だけです。仕方ないね。
 
 
-◯Stage 3　"Crimson Greetings"
+◯ Stage 3　"Crimson Greetings"
 
 	バラということで、なんとなくセレブな雰囲気になるよう作ってみました。
 	フィドルじゃなくてバイオリンを使ってるのがセレブポイント。
 	思いのほかハートフルな感じになりましたが、これはこれでお気に入り。
 	
 
-◯Stage 3 Boss　"March, Chivalric Order of the Thorn"
+◯ Stage 3 Boss　"March, Chivalric Order of the Thorn"
 
 	薔薇なのかローズヒップなのかトマトなのか、Kilma's theme.
 	道中と打って変わってボスらしい激しい楽曲です。バイオリンとかホルンを前面に押し出してみました。
 	ここまで書いて３面のコンセプトがなんちゃってクラシック風味ということに気がつく。トライアングルは犠牲になったのだ…
 
 
-◯４面道中　「見るからに怪しい古城のテーマ」
+◯ Stage 4　"Theme of the Strange-When-You-Notice Kojou"
 
 	暗くて古い建物の中をゴリゴリ突き進むイメージ。
 	最初は「見るからに怪しい洋館のテーマ」でしたが、
 	諸事情により「見るからに怪しい古城のテーマ」に変更されました。
 	
 
-◯４面ボス　「ヘモグロビンの踊り」
+◯ Stage 4 Boss　"The Way of the Hemoglobin"
 
-	マッド白魔道士、レコルのテーマです。
-	吸血鬼をイメージして作った曲です。
+	It's the theme of the Mad white mage, Recole.
+	It's a song created in the image of a vampire.
 	鐘とかチェンバロとかギロとかすごく地獄感が出てるような出てないような…
 
 
-◯５面道中　「デアリングディセンダー」
+◯ Stage 5　"デアリングDescender"
 
 	スピード感があって、暗すぎず明るすぎず、かつ道中っぽい曲を目指した曲。
 	曲名は大胆に降りる者、ということで、二柱の神様を示してます。
