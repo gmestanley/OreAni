@@ -29,7 +29,7 @@
 
 　★ Rampant Sun Deity  Shen
 
-　・Ability: Order
+　・ Powers: Order
 　・ Emblem: Mirror
 
 　(Plans to be) God of the Sun. 太陽にまつわる権能を持ち、雨の日も洗濯物を乾かすことができる。
@@ -46,7 +46,7 @@
 
 　★ Storm-Causing God  Ryuu
 
-　・Ability: Chaos
+　・ Powers: Chaos
 　・ Emblem: Sword
 
 　(Plans to be) God of Storms. 風雨やlightningを作り出す権能を持つ。普段は自分が作った蜃気楼でくつろいでいる。
@@ -71,7 +71,7 @@
 
 　★ Stray Dog Living Idly 　Ross
 
-　・Ability: Sloth
+　・ Powers: Sloth
 　・ Emblem: Shovel
 
 　のんびりした性格で、自由気ままな暮らしを送っている犬っぽい悪魔。
@@ -90,7 +90,7 @@
 
 　★ Little Giant that Guards the Gate 　Tarta
 
-　・Ability: Vanity
+　・ Powers: Vanity
 　・ Emblem: Helmet
 　
 　Entrance of Hell付近にいる猪の悪魔。
@@ -113,7 +113,7 @@
 　
 　★ Deep-Crimson Gardener 　Kilma
 
-　・Ability: Nobility
+　・ Powers: Nobility
 　・ Emblem: Rose
 
 　黒い森のバラ園を管理する、トマトっぽい見た目の悪魔庭師。
@@ -134,7 +134,7 @@
 　
 　★ Skillfully Working Demon  Nero
 
-　・Ability: Malice
+　・ Powers: Malice
 　・ Emblem: Dagger
 
 　Elite demon who works as the demon lord's right hand.
@@ -158,7 +158,7 @@
 　
 　★ Dark Healer of the Underworld  Recole
   
-　・Ability: Looping
+　・ Powers: Looping
 　・ Emblem: Bronze Snake
 
 　地獄の庭園の最奥にあるさびれたお城に住む、the girl demon.
