@@ -1,0 +1,267 @@
+#ScriptVersion[2]
+
+	script_enemy_main
+	{
+let step=0;
+gra=1;
+let char=1;
+
+	let csd= GetCurrentScriptDirectory;
+	let imgED1=csd~".\img\ed\1.png";
+	let imgED2=csd~".\img\ed\2.png";
+	let imgED3=csd~".\img\ed\3.png";
+	let imgED4=csd~".\img\ed\4.png";
+	let imgED5=csd~".\img\ed\5.png";
+
+@Initialize()
+	{
+	SetLife(1);ForbidShot(true);ForbidBomb(true);
+	SetTexture(imgBoss);//読み込んだ画像を指定する
+		LoadGraphic(imgED1);
+		LoadGraphic(imgED2);
+		LoadGraphic(imgED3);
+		LoadGraphic(imgED4);
+		LoadGraphic(imgED5);
+	CreateEventFromScript("Event");
+	}
+
+@MainLoop(){
+	if(OnEvent==true){step=GetEventStep();
+	SetPlayerX(cenX);
+	SetPlayerY(maxY+60);
+		if(step == 0){
+		yield;
+		}
+		if(step == 1){
+		yield;
+		}
+		if(step == 2){
+		yield;
+		}
+		if(step == 3){
+		VanishEnemy;
+		}
+	TMain;
+	}
+}
+
+@DrawLoop{
+}
+
+@Finalize(){
+	DeleteGraphic(imgBoss);//画像をメモリから解放
+	ForbidShot(false);ForbidBomb(false);
+}
+
+task TMain{
+	ED;
+	yield;
+}
+
+let step2=0;
+task ED{
+	loop{
+		if(GetPlayerScriptName=="sh2.txt"){
+			if(step==0&&step2==0){
+			EDgra(imgED1);
+			step2=1;
+			}
+			if(step==1&&step2==1){
+			EDgra(imgED2);
+			step2=2;
+			}
+			if(step==2&&step2==2){
+			EDgra(imgED3);
+			step2=3;
+			}
+		}
+
+		if(GetPlayerScriptName=="ryu.txt"){
+			if(step==0&&step2==0){
+			EDgra(imgED1);
+			step2=1;
+			}
+			if(step==1&&step2==1){
+			EDgra(imgED4);
+			step2=2;
+			}
+			if(step==2&&step2==2){
+			EDgra(imgED5);
+			step2=3;
+			}
+		}
+	yield;
+	}
+}
+
+		task EDgra(pic){
+		let obj = Obj_Create(OBJ_EFFECT);//エフェクトオブジェクトを作成
+		ObjEffect_SetTexture(obj,pic);//なんらかのテクスチャを設定
+		ObjEffect_SetRenderState(obj,ALPHA);
+		ObjEffect_SetPrimitiveType(obj, PRIMITIVE_TRIANGLESTRIP);//プリミティブタイプを設定
+		ObjEffect_CreateVertex(obj, 4);//頂点を4個つくる
+		ObjEffect_SetLayer(obj,5);
+		Obj_SetPosition(obj,cenX,cenY);
+		Obj_SetAutoDelete(obj,true);
+		
+		//四角形状に各頂点のUV値を設定。(0,0)-(10,10)の部分。
+		ObjEffect_SetVertexUV(obj, 0,     0, 0);
+		ObjEffect_SetVertexUV(obj, 1,     0, 480);
+		ObjEffect_SetVertexUV(obj, 2,   384, 0);
+		ObjEffect_SetVertexUV(obj, 3,   384, 480);	
+
+		ObjEffect_SetVertexXY(obj, 0, -192, -240);
+		ObjEffect_SetVertexXY(obj, 1, -192,  240);
+		ObjEffect_SetVertexXY(obj, 2,  192, -240);
+		ObjEffect_SetVertexXY(obj, 3,  192,  240);	
+
+		let count=0;//カウント
+		let alpha=5;
+
+			while(!Obj_BeDeleted(obj)){
+			ObjEffect_SetVertexColor(obj,0,alpha,255,255,255);
+			ObjEffect_SetVertexColor(obj,1,alpha,255,255,255);
+			ObjEffect_SetVertexColor(obj,2,alpha,255,255,255);
+			ObjEffect_SetVertexColor(obj,3,alpha,255,255,255);
+			if(alpha<255){alpha+=5;}		
+			yield;
+			}
+			Obj_Delete(obj);
+		}
+
+	#include_function ".\include.txt"
+}
+	
+
+	script_event Event
+	{	
+		
+		@Initialize
+		{
+
+		}
+		
+		@MainLoop
+		{
+
+			PlayMusic(GetCurrentScriptDirectory~"\bgm\ED.wav");
+			SetStep(0);
+
+			TextOutC(120,"\c[GREEN]神様が地獄を荒らしまわったその後…\n
+					神様は地獄に遊びに来るようになりました。");//文字描画
+
+			if(GetPlayerScriptName=="sh2.txt"){//シェン会話
+
+			SetStep(1);
+
+			TextOutC(60,"\c[YELLOW]心臓うめえ！！");//文字描画
+
+			TextOut("\c[RED]まだまだあるぞ？\n
+					たんと喰らうがよい！！");//文字描画
+
+			TextOut("\c[AQUA]心臓カレーできたぞー");//文字描画
+
+			TextOut("\c[YELLOW]わーい\n
+				 \c[RED]わーい");//文字描画
+
+			TextOut("\c[GREEN]魔王を撃破した神様でしたが、\n
+					それをきっかけに悪魔達と仲良くなりました");//文字描画
+
+			TextOut("\c[GREEN]そういうわけで、当初の目的だった\n
+					心臓をたらふく食べることができたのです");//文字描画
+
+			TextOut("\c[GREEN]絶対許さない…神様朽ち果てろ\n
+					え？あ、なんでもないですよ？");//文字描画
+
+			SetStep(2);
+
+			TextOutC(60,"\c[YELLOW]そういえば、あの魔王退治の募集…\n
+					あれもお前の仕業だったのか？");//文字描画
+
+			TextOut("\c[RED]え？いや、神様が来たら面白いなとは\n
+					正直思ってたけど…");//文字描画
+
+			TextOut("\c[RED]そんなことはしてないなあ\n
+					そこまでマゾでもないし");//文字画
+
+			TextOut("\c[YELLOW]じゃあアレは一体…\n
+					ま、いっか！！");//文字描画
+
+			TextOut("\c[AQUA]おかわりいるかー？");//文字描画
+
+			TextOut("\c[YELLOW]はーい\n
+				 \c[RED]はーい");//文字描画			
+
+			TextOut("\c[GREEN]魔王と神様は、このあと\n
+					動けなくなるまで心臓を食べたそうです");//文字描画
+
+			TextOut("\c[GREEN]そんな様子を物陰から眺めている\n
+					わたしが居ますが、それはまた別の話…");//文字描画
+
+			TextOutC(60,"\c[GREEN]ってことでクリアおめでとう！！\n
+					EXTRAで待ってまーす！！ﾐｬﾊ！！");//文字描画
+			}
+
+			else if(GetPlayerScriptName=="ryu.txt"){//リュー会話
+			SetStep(1);
+
+			TextOutC(60,"\c[BLUE]で、結局叱られたと");//文字描画
+
+			TextOut("\c[RED]うむ…\n
+					いつもより多めに叱られた");//文字描画
+
+			TextOut("\c[AQUA]全く、\n
+					自分の権能も管理できないとは情けない");//文字描画
+
+			TextOut("\c[GREEN]魔王は「思ったことを実現する」という\n
+					強大な力を持っています");//文字描画
+
+			TextOut("\c[GREEN]ただ、強大すぎて自分の思い通りに\n
+					ならないこともあるのです");//文字描画
+
+			TextOut("\c[GREEN]多忙のあまり「神様かかってこいや」\n
+					と一瞬現実逃避したのですが、");//文字描画
+
+			TextOut("\c[GREEN]そのような些細な考えが\n
+					図らずも実現してしまったわけですね");//文字描画
+
+			TextOut("\c[GREEN]お兄様のそういうところがまた\n
+					愛おしいんだけど！");//文字描画
+
+			SetStep(2);
+
+			TextOutC(60,"\c[BLUE]じゃあ、おれはこれで\n
+					図書館に勉強しに行くので");//文字描画
+
+			TextOut("\c[RED]え？もう帰るのか！？\n
+					帰さぬ、帰さぬぞ！！");//文字描画
+
+			TextOut("\c[BLUE]いや、そんな必死に引き止めなくても\n
+					また来るから大丈夫だよ");//文字画
+
+			TextOut("\c[AQUA]そんな気軽に来られてもなあ\n
+					まあ、いいんだけど");//文字描画
+
+			TextOut("\c[GREEN]そんな魔王を倒した神様は、すっかり\n
+					魔王のお気に入りになってしまいました");//文字描画
+
+			TextOut("\c[GREEN]魔王の遊び相手として\n
+					地獄にも頻繁に呼ばれる毎日…");//文字描画
+
+			TextOut("\c[GREEN]やっぱり始末しなきゃ…あの泥棒蛇…\n
+					あの場所はわたしの場所…");//文字描画
+
+			TextOutC(60,"\c[GREEN]ってことでクリアおめでとう！！\n
+					EXTRAで待ってまーす！！ﾐｬﾊ！！");//文字描画
+			}
+
+			SetStep(3);
+			End();//最後にEnd()は必須
+		}
+		
+		@Finalize
+		{
+
+		}
+	
+	}
