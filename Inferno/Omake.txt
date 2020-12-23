@@ -1,7 +1,7 @@
 呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪
 
-		Ore no Animism ~Hell Chapter~
-						Omake	2014/5/3
+					Ore no Animism ~Inferno~
+											Omake	2014/5/3
 
 呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪祝呪呪呪呪呪呪呪呪呪呪呪呪呪
 
@@ -29,8 +29,8 @@
 
 　★ Rampant Sun Deity  Shen
 
-　・Function: Order
-　・Emblem: Mirror
+　・Ability: Order
+　・ Emblem: Mirror
 
 　(Plans to be) God of the Sun. 太陽にまつわる権能を持ち、雨の日も洗濯物を乾かすことができる。
 
@@ -46,8 +46,8 @@
 
 　★ Storm-Causing God  Ryuu
 
-　・Function: Chaos
-　・Emblem: Sword
+　・Ability: Chaos
+　・ Emblem: Sword
 
 　(Plans to be) God of Storms. 風雨やlightningを作り出す権能を持つ。普段は自分が作った蜃気楼でくつろいでいる。
 
@@ -72,7 +72,7 @@
 　★ Stray Dog Living Idly 　Ross
 
 　・Ability: Sloth
-　・Emblem: Shovel
+　・ Emblem: Shovel
 
 　のんびりした性格で、自由気ままな暮らしを送っている犬っぽい悪魔。
 
@@ -81,7 +81,7 @@
 　彼に感化されると、残りの人生を特に理由もなく生きることになるだろう。
 　神様にはあまり関係ないが。
 
-　He likes chikuwa and lemons.
+　Likes: Chikuwa and lemons.
 
 　今回の魔王退治に関しては何か知っているようだが、それを明かすことなく調伏されてしまう。
 
@@ -91,7 +91,7 @@
 　★ Little Giant that Guards the Gate 　Tarta
 
 　・Ability: Vanity
-　・Emblem: Helmet
+　・ Emblem: Helmet
 　
 　Entrance of Hell付近にいる猪の悪魔。
 
@@ -103,7 +103,7 @@
 　ものを凄そうに見せる権能を持つが、あくまでも幻。
 　鏡の前で巨大化しては言い知れない虚しさに襲われている。
 
-　ちなみに趣味は野球。
+　Incidentally, his hobby is baseball.
 
 　門を踏み越えて地獄へ押し入らんとする神様に戦いを挑むも、コケにされた挙句地獄への侵入を許す。
 　わりと悲惨。
@@ -111,10 +111,10 @@
 
 ◯ Stage 3 Boss
 　
-　★ Deep Crimson Gardener 　Kilma
+　★ Deep-Crimson Gardener 　Kilma
 
-　・Ability: Pride
-　・Emblem: Rose
+　・Ability: Nobility
+　・ Emblem: Rose
 
 　黒い森のバラ園を管理する、トマトっぽい見た目の悪魔庭師。
 
@@ -130,36 +130,36 @@
 　戦いに敗れた後、愛する植物を守るために彼が下した決断は、魔王を売ることだった。
 
 
-◯４面中ボス
+◯ Stage 4 Midboss
 　
-　★敏腕苦労Demon　Nero
+　★ Skillfully Working Demon  Nero
 
-　・権能：悪意
-　・象徴：短剣
+　・Ability: Malice
+　・ Emblem: Dagger
 
-　魔王さまの右腕を務めるElite Demon。
+　Elite demon who works as the demon lord's right hand.
 
-　ニンゲンの悪意を操る権能を持つ。
-　赤い悪意は激熱でいちご味、青い悪意は激冷でなすび味。
+　Has the ability to control the malice of Humans.
+　Red maliceは激熱でいちご味、blue maliceは激冷でなすび味。
 　ニンゲンがこれに触れると精神をやられるが、神様とか悪魔は体をやられる。
 
 　魔王の秘書としてスケジュールの管理、家庭教師、掃除洗濯食事の準備などをする悪魔。
 　激務であるため、レッドゴズ(※地獄でポピュラーな栄養ドリンク)によるドーピングが欠かせない。
 　公の場では魔王を丁寧に取り扱うが、それ以外ではタメ口で罵倒しまくる。
 
-　ライナスの昔からの兄貴分であり、将来魔王になる彼を支えるために昔からコツコツ努力してきた。
+　Linusの昔からの兄貴分であり、将来魔王になる彼を支えるために昔からコツコツ努力してきた。
 　とても悪魔の出来た悪魔。
 
 　地獄門陥落の知らせを聞き　仕事量が増えることにため息をつきつつ侵入者の元へ向かう。
 　まさかそれが主君の力によるものとは、彼も思わなかったようだが。
 
 
-◯４面ボス
+◯ Stage 4 Boss
 　
-　★ Underworldの冥医　Recole
-
-　・権能：循環
-　・象徴：青銅のSnake
+　★ Dark Healer of the Underworld  Recole
+  
+　・Ability: Looping
+　・ Emblem: Bronze Snake
 
 　地獄の庭園の最奥にあるさびれたお城に住む、the girl demon.
 　
@@ -245,9 +245,9 @@
 	この若干のアンニュイさが１面にマッチしたような気もします。
 
 
-◯ Stage 1 Boss　「食う寝る遊ぶの人生賛歌」
+◯ Stage 1 Boss　"Life Hymn of Eat, Sleep and Play"
 
-	悪い方向にポジティブなデビル犬、Ross' theme.
+	It's the positive Devil dog going down a bad path, Ross' theme.
 	本人のほけーっとした雰囲気の割に激しい曲になっているのは、
 	この曲を作った当時、ロスはもっと子供っぽいキャラという設定だったからなのです。(名前も違った)
 
@@ -261,7 +261,7 @@
 
 ◯ Stage 2 Boss　"Small Gigantomachy"
 
-	自分の背丈にコンプレックスを持つちびっ子巨人、Tarta's theme.
+	It's the 自分の背丈にコンプレックスを持つちびっ子巨人、Tarta's theme.
 	安直にもティンパニで巨人の進撃をイメージ。ちなみにタルタはマリンバ。
 	ちなみに、巨人族は本当は背の高い種族で、幻術でごまかすのはこの子だけです。仕方ないね。
 
@@ -275,12 +275,12 @@
 
 ◯ Stage 3 Boss　"March, Chivalric Order of the Thorn"
 
-	薔薇なのかローズヒップなのかトマトなのか、Kilma's theme.
+	It's the rose, I mean rose hip, I mean tomato, Kilma's theme.
 	道中と打って変わってボスらしい激しい楽曲です。バイオリンとかホルンを前面に押し出してみました。
 	ここまで書いて３面のコンセプトがなんちゃってクラシック風味ということに気がつく。トライアングルは犠牲になったのだ…
 
 
-◯ Stage 4　"Theme of the Strange-When-You-Notice Kojou"
+◯ Stage 4　"Theme of the Strange-When-You-Notice Old Castle"
 
 	暗くて古い建物の中をゴリゴリ突き進むイメージ。
 	最初は「見るからに怪しい洋館のテーマ」でしたが、
@@ -289,12 +289,12 @@
 
 ◯ Stage 4 Boss　"The Way of the Hemoglobin"
 
-	It's the theme of the Mad white mage, Recole.
-	It's a song created in the image of a vampire.
+	It's the Mad white mage, Recole's theme.
+	It is a song created in the image of a vampire.
 	鐘とかチェンバロとかギロとかすごく地獄感が出てるような出てないような…
 
 
-◯ Stage 5　"デアリングDescender"
+◯ Stage 5　"Dearing Descender"
 
 	スピード感があって、暗すぎず明るすぎず、かつ道中っぽい曲を目指した曲。
 	曲名は大胆に降りる者、ということで、二柱の神様を示してます。
