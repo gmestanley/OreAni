@@ -247,7 +247,7 @@
 
 ◯ Stage 1 Boss　"Life Hymn of Eat, Sleep and Play"
 
-	It's the positive Devil dog going down a bad path, Ross' theme.
+	The positive Devil dog going down a bad path, Ross' theme.
 	本人のほけーっとした雰囲気の割に激しい曲になっているのは、
 	この曲を作った当時、ロスはもっと子供っぽいキャラという設定だったからなのです。(名前も違った)
 
@@ -261,7 +261,7 @@
 
 ◯ Stage 2 Boss　"Small Gigantomachy"
 
-	It's the 自分の背丈にコンプレックスを持つちびっ子巨人、Tarta's theme.
+	The 自分の背丈にコンプレックスを持つkiddy giant, Tarta's theme.
 	安直にもティンパニで巨人の進撃をイメージ。ちなみにタルタはマリンバ。
 	ちなみに、巨人族は本当は背の高い種族で、幻術でごまかすのはこの子だけです。仕方ないね。
 
@@ -275,7 +275,7 @@
 
 ◯ Stage 3 Boss　"March, Chivalric Order of the Thorn"
 
-	It's the rose, I mean rose hip, I mean tomato, Kilma's theme.
+	The rose, I mean rose hip, I mean tomato, Kilma's theme.
 	道中と打って変わってボスらしい激しい楽曲です。バイオリンとかホルンを前面に押し出してみました。
 	ここまで書いて３面のコンセプトがなんちゃってクラシック風味ということに気がつく。トライアングルは犠牲になったのだ…
 
@@ -289,35 +289,35 @@
 
 ◯ Stage 4 Boss　"The Way of the Hemoglobin"
 
-	It's the Mad white mage, Recole's theme.
+	The Mad white mage, Recole's theme.
 	It is a song created in the image of a vampire.
 	鐘とかチェンバロとかギロとかすごく地獄感が出てるような出てないような…
 
 
-◯ Stage 5　"Dearing Descender"
+◯ Stage 5　"Daring Descender"
 
 	スピード感があって、暗すぎず明るすぎず、かつ道中っぽい曲を目指した曲。
 	曲名は大胆に降りる者、ということで、二柱の神様を示してます。
 	５面道中は落ちる感じがうまく表現できなくて苦労しました。
 
 
-◯５面ボス　「衝天インパルス」
+◯ Stage 5 Boss　"High Spirits Impulse"
 
-	強制移動兄貴、ガルドのテーマです。
+	強制移動兄貴、Gald's theme.
 	力強いけどちょっとアホっぽい、楽しげなボス曲になりました。弾幕は厳しいですが。
 	ここで豆知識。ガルドの髪の毛は実は毒針で、刺さると自制できなくなってヤバイ行動に走ります。
 
 
-◯６面道中　「嘆きの玉座」
+◯ Stage 6　"Throne of Lamentation"
 
 	「地獄の底は実は超寒い」という雰囲気を元に作りました。
 	流れるのは先ですが、こっちがラスボス曲のアレンジ版になります。
 	この後に大物が控えてる感じが出てればいいなァ。
 
 
-◯６面ボス　「魔王のプライド」
+◯ Stage 6 Boss　"Pride of the Devil"
 
-	あんた何様魔王様。ライナスのテーマです。
+	あんた何様魔王様。Linus' theme.
 	強大な力を持つラスボス！！感のある曲になったと思います。
 	ラスボス本人はキャラ的にすごく軽いんですけどねー。
 
