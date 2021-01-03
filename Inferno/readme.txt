@@ -1,133 +1,133 @@
-ŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽô
+å‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ª
 
-		‚¨‚ê‚ÌƒAƒjƒ~ƒYƒ€`’n–•Ñ`@Ver.1.03
-						Žæˆµà–¾‘	2014/5/3
+		Ore no Animism ~Inferno~   Ver.1.03
+				 Instruction Manual	    2014/5/3
 
-ŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôjŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽôŽô
+å‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªç¥å‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ªå‘ª
 
-¡–ÚŽŸ
+â– ç›®æ¬¡
 
-@‚PD’ˆÓŽ–€
-@‚QDˆ¥ŽA
-@‚RD“ü‚Á‚Ä‚¢‚é‚à‚Ì
-@‚SD—V‚Ñ•û
-@‚TDƒ}ƒjƒ…ƒAƒ‹
-@‚UD‘fÞ‚É‚Â‚¢‚Ä
-@‚VD‰½‚©‚ ‚Á‚½‚ç
-
-
-¡‚PD’ˆÓŽ–€
-
-@@‚±‚ÌƒQ[ƒ€‚Í‚Æ`‚Ù`GC—l‚Ì“Œ•û’e–‹•—‚Æ‚¢‚¤ƒc[ƒ‹‚ðŽg—p‚µ‚Äì‚ç‚ê‚½ƒQ[ƒ€‚Å‚·B
-@ãŠCƒAƒŠƒXŒ¶žÙ’c—l‚Ì“Œ•ûProject‚Æ‚ÍˆêØŠÖŒW‚ ‚è‚Ü‚¹‚ñB
-@‚±‚¿‚ç‚©‚çˆê•û“I‚ÉƒEƒ‹ƒgƒ‰ƒMƒƒƒ‰ƒNƒeƒBƒJƒŠƒXƒyƒNƒg‚µ‚Ä‚¢‚é‚¾‚¯‚Å‚·B
-@
-
-¡‚QDˆ¥ŽA
-
-	@‚±‚Ì“x‚Íu‚¨‚ê‚ÌƒAƒjƒ~ƒYƒ€`’n–•Ñ`v‚ð‚c‚k‚µ‚Ä’¸‚«‚ ‚è‚ª‚Æ‚¤‚²‚´‚¢‚Ü‚·B
-	‚±‚ÌƒQ[ƒ€‚Í–‚‰¤“¢”°‚ð–Ú•W‚ÉA—§‚¿‚Í‚¾‚©‚é—LÛ–³Û‚ð‚È‚¬•¥‚¢‚Â‚Â’n–‚ð‹ì‚¯”²‚¯‚é
-	ƒTƒNƒTƒNŒncƒVƒ…[ƒeƒBƒ“ƒO‚Å‚·B
-
-@	@‚±‚ÌƒQ[ƒ€A‚Ü‚Æ‚à‚É”ð‚¯‚½‚çƒAƒJƒ“’e–‹‚ªŒ‹\‚ ‚é‹C‚ª‚µ‚Ü‚·B
-	ƒ{ƒ€A’eÁ‚µ‚ð‹ìŽg‚µ‚ÄŽc‹@‚ð‰·‘¶‚·‚é‚Ì‚ªƒNƒŠƒA‚ÌŒ®‚¾‚ÆŽv‚¢‚Ü‚·B
-	Šæ’£‚Á‚Ä‚­‚¾‚³‚¢B
+ã€€ï¼‘ï¼Žæ³¨æ„äº‹é …
+ã€€ï¼’ï¼ŽæŒ¨æ‹¶
+ã€€ï¼“ï¼Žå…¥ã£ã¦ã„ã‚‹ã‚‚ã®
+ã€€ï¼”ï¼ŽéŠã³æ–¹
+ã€€ï¼•ï¼Žãƒžãƒ‹ãƒ¥ã‚¢ãƒ«
+ã€€ï¼–ï¼Žç´ æã«ã¤ã„ã¦
+ã€€ï¼—ï¼Žä½•ã‹ã‚ã£ãŸã‚‰
 
 
-¡‚RD“ü‚Á‚Ä‚¢‚é‚à‚Ì
+â– ï¼‘ï¼Žæ³¨æ„äº‹é …
 
-	‚PDth_dnhƒtƒHƒ‹ƒ_
-	‚QDreadme©¡‚±‚±
-	‚RD‚¨‚Ü‚¯
+ã€€ã€€ã“ã®ã‚²ãƒ¼ãƒ ã¯ã¨ï½žã»ï½žGCæ§˜ã®æ±æ–¹å¼¾å¹•é¢¨ã¨ã„ã†ãƒ„ãƒ¼ãƒ«ã‚’ä½¿ç”¨ã—ã¦ä½œã‚‰ã‚ŒãŸã‚²ãƒ¼ãƒ ã§ã™ã€‚
+ã€€ä¸Šæµ·ã‚¢ãƒªã‚¹å¹»æ¨‚å›£æ§˜ã®æ±æ–¹Projectã¨ã¯ä¸€åˆ‡é–¢ä¿‚ã‚ã‚Šã¾ã›ã‚“ã€‚
+ã€€ã“ã¡ã‚‰ã‹ã‚‰ä¸€æ–¹çš„ã«ã‚¦ãƒ«ãƒˆãƒ©ã‚®ãƒ£ãƒ©ã‚¯ãƒ†ã‚£ã‚«ãƒªã‚¹ãƒšã‚¯ãƒˆã—ã¦ã„ã‚‹ã ã‘ã§ã™ã€‚
+ã€€
+
+â– ï¼’ï¼ŽæŒ¨æ‹¶
+
+	ã€€ã“ã®åº¦ã¯ã€ŒãŠã‚Œã®ã‚¢ãƒ‹ãƒŸã‚ºãƒ ï½žåœ°ç„ç¯‡ï½žã€ã‚’ï¼¤ï¼¬ã—ã¦é ‚ãã‚ã‚ŠãŒã¨ã†ã”ã–ã„ã¾ã™ã€‚
+	ã“ã®ã‚²ãƒ¼ãƒ ã¯é­”çŽ‹è¨Žä¼ã‚’ç›®æ¨™ã«ã€ç«‹ã¡ã¯ã ã‹ã‚‹æœ‰è±¡ç„¡è±¡ã‚’ãªãŽæ‰•ã„ã¤ã¤åœ°ç„ã‚’é§†ã‘æŠœã‘ã‚‹
+	ã‚µã‚¯ã‚µã‚¯ç³»ç¸¦ã‚·ãƒ¥ãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã§ã™ã€‚
+
+ã€€	ã€€ã“ã®ã‚²ãƒ¼ãƒ ã€ã¾ã¨ã‚‚ã«é¿ã‘ãŸã‚‰ã‚¢ã‚«ãƒ³å¼¾å¹•ãŒçµæ§‹ã‚ã‚‹æ°—ãŒã—ã¾ã™ã€‚
+	ãƒœãƒ ã€å¼¾æ¶ˆã—ã‚’é§†ä½¿ã—ã¦æ®‹æ©Ÿã‚’æ¸©å­˜ã™ã‚‹ã®ãŒã‚¯ãƒªã‚¢ã®éµã ã¨æ€ã„ã¾ã™ã€‚
+	é ‘å¼µã£ã¦ãã ã•ã„ã€‚
 
 
-¡‚SD—V‚Ñ•û
+â– ï¼“ï¼Žå…¥ã£ã¦ã„ã‚‹ã‚‚ã®
 
-	@‚PDƒ_ƒEƒ“ƒ[ƒh‚µ‚½ƒtƒ@ƒCƒ‹‚ð‰ð“€‚·‚é
+	ï¼‘ï¼Žth_dnhãƒ•ã‚©ãƒ«ãƒ€
+	ï¼’ï¼Žreadmeâ†ä»Šã“ã“
+	ï¼“ï¼ŽãŠã¾ã‘
 
-	@‚QDth_dnhƒtƒHƒ‹ƒ_‚ðŠJ‚­
 
-	@‚RDth_dnh.exe‚©‚ç“Œ•û’e–‹•—‚ð‹N“®‚µ‚ÄAStage‚©‚çƒvƒŒƒC‚·‚éƒXƒNƒŠƒvƒg‚ð‘I‚Ô
+â– ï¼”ï¼ŽéŠã³æ–¹
+
+	ã€€ï¼‘ï¼Žãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã—ãŸãƒ•ã‚¡ã‚¤ãƒ«ã‚’è§£å‡ã™ã‚‹
+
+	ã€€ï¼’ï¼Žth_dnhãƒ•ã‚©ãƒ«ãƒ€ã‚’é–‹ã
+
+	ã€€ï¼“ï¼Žth_dnh.exeã‹ã‚‰æ±æ–¹å¼¾å¹•é¢¨ã‚’èµ·å‹•ã—ã¦ã€Stageã‹ã‚‰ãƒ—ãƒ¬ã‚¤ã™ã‚‹ã‚¹ã‚¯ãƒªãƒ—ãƒˆã‚’é¸ã¶
 		
-		Normalc“™Šˆ’n–@1T–Ú
+		Normalâ€¦ç­‰æ´»åœ°ç„ã€€1é€±ç›®
 
-		Fantasticc–³ŠÔ’n–@2T–Ú
+		Fantasticâ€¦ç„¡é–“åœ°ç„ã€€2é€±ç›®
 
-		ŠeƒXƒe[ƒW‚ÌPractice
+		å„ã‚¹ãƒ†ãƒ¼ã‚¸ã®Practice
 
-		AnothercA‚ÆB‚ª‚ ‚è‚Ü‚·B
+		Anotherâ€¦Aã¨BãŒã‚ã‚Šã¾ã™ã€‚
 
-		Extrac’Ç‰ÁƒXƒe[ƒW
+		Extraâ€¦è¿½åŠ ã‚¹ãƒ†ãƒ¼ã‚¸
 
-		‹ÉŒÀ_‹Zc10ƒR
-
-
-¡‚TDƒ}ƒjƒ…ƒAƒ‹
-
-	@Œ´‘¥A’e–‹•—‚Ì‘€ì•û–@‚Æ“¯‚¶‚Å‚·B
-
-	@ƒJ[ƒ\ƒ‹ƒL[FˆÚ“®
-	@ZF’e(‰Ÿ‚µ‚Á‚Ï‚È‚µ‚ÅƒI[ƒg˜AŽË)AŒˆ’è
-	@XFƒ{ƒ€AƒLƒƒƒ“ƒZƒ‹
-	@CF_Œ‚”­“®
-	@¶ShiftFŒ¸‘¬ˆÚ“®
-	@EscFƒ|[ƒY
-	@¶CtrlFƒCƒxƒ“ƒgƒXƒLƒbƒvA_Œ‚”­“®
-
-	ü_Œ‚‚É‚Â‚¢‚Ä
-	@
-	@“G‚ðŒ‚‚¿—Ž‚Æ‚µ‚½‚èAƒ{ƒX‚ÉŒ‚‚¿‚±‚Þ‚Æo‚é“_•„‚ð50–‡W‚ß‚é‚ÆAu_Œ‚v‚Æ‚¢‚¤‰½‚â‚ç_‚ª‚©‚è“I‚È‚à‚Ì‚ªCƒ{ƒ^ƒ“‚©Ctrlƒ{ƒ^ƒ“‚Å”­“®‚Å‚«‚Ü‚·B
-	_Œ‚‚Íƒ{ƒ€‚ÆˆÙ‚È‚èUŒ‚”»’è‚Í‚ ‚è‚Ü‚¹‚ñ‚ªA‰æ–Ê“à‚Ì’e‚ð‘S•”‹ì’€‚·‚é‚Æ‹¤‚ÉƒAƒCƒeƒ€‚ð‰ñŽû‚µ‚Ü‚·B‚Ü‚½AÁ‚µ‚½’e‚Ì”‚ªˆê’è”‚É’B‚·‚é‚ÆAƒ{ƒ€‚âŽc‹@‚ª‘‚¦‚½‚è‚µ‚Ü‚·B
-	—v‚·‚é‚ÉA’e‚ª‘½‚­‚ÄƒLƒcƒC‰ÓŠ‚Å_Œ‚‚ðŒ‚‚Â‚±‚Æ‚ÅA“ïŠ‚àƒJƒbƒg‚Å‚«‚é‚µƒ{ƒ€‚à‘‚¦‚éˆêÎ“ñ’¹‚ÈƒVƒXƒeƒ€‚È‚Ì‚Å‚·B	
-	‚Ü‚½A“G‚É‚È‚é‚×‚­‹ß‚Ã‚¢‚ÄUŒ‚‚·‚é‚Æ“_•„‚ª‘½‚­o‚é‚Ì‚ÅA–³—‚µ‚È‚¢”ÍˆÍ‚ÅÏ‹É“I‚É‹ß‚Ã‚¢‚Ä‚¢‚«A_Œ‚‚ð‚à‚è‚à‚èŒ‚‚Á‚Ä‚¢‚«‚Ü‚µ‚å‚¤B
-
-	üƒJƒXƒŠ‰ñŽû‚É‚Â‚¢‚Ä
-
-	@“G’e‚ÉƒJƒX‚é‚ÆA¶‰º‚ÌƒQ[ƒW‚ªã‚ª‚è‚Ü‚·B‚ ‚é’ö“xƒQ[ƒW‚ªã‚ª‚é‚ÆAŽ©“®“I‚É‰æ–Ê“à‚ÌƒAƒCƒeƒ€‚ð‰ñŽû‚·‚é‚æ‚¤‚É‚È‚è‚Ü‚·B
+		æ¥µé™ç¥žæŠ€â€¦10ã‚³
 
 
-¡‚UD‚¨ŽØ‚è‚µ‚½‘fÞ‚É‚Â‚¢‚Ä
+â– ï¼•ï¼Žãƒžãƒ‹ãƒ¥ã‚¢ãƒ«
 
-	’e–‹•—wiki‚©‚ç‚¢‚ë‚¢‚ë‚¨ŽØ‚è‚µ‚Ä‚¢‚Ü‚·B
-	««««««««««««««««««««
+	ã€€åŽŸå‰‡ã€å¼¾å¹•é¢¨ã®æ“ä½œæ–¹æ³•ã¨åŒã˜ã§ã™ã€‚
+
+	ã€€ã‚«ãƒ¼ã‚½ãƒ«ã‚­ãƒ¼ï¼šç§»å‹•
+	ã€€Zï¼šå¼¾(æŠ¼ã—ã£ã±ãªã—ã§ã‚ªãƒ¼ãƒˆé€£å°„)ã€æ±ºå®š
+	ã€€Xï¼šãƒœãƒ ã€ã‚­ãƒ£ãƒ³ã‚»ãƒ«
+	ã€€Cï¼šç¥žæ’ƒç™ºå‹•
+	ã€€å·¦Shiftï¼šæ¸›é€Ÿç§»å‹•
+	ã€€Escï¼šãƒãƒ¼ã‚º
+	ã€€å·¦Ctrlï¼šã‚¤ãƒ™ãƒ³ãƒˆã‚¹ã‚­ãƒƒãƒ—ã€ç¥žæ’ƒç™ºå‹•
+
+	â—¯ç¥žæ’ƒã«ã¤ã„ã¦
+	ã€€
+	ã€€æ•µã‚’æ’ƒã¡è½ã¨ã—ãŸã‚Šã€ãƒœã‚¹ã«æ’ƒã¡ã“ã‚€ã¨å‡ºã‚‹ç‚¹ç¬¦ã‚’50æžšé›†ã‚ã‚‹ã¨ã€ã€Œç¥žæ’ƒã€ã¨ã„ã†ä½•ã‚„ã‚‰ç¥žãŒã‹ã‚Šçš„ãªã‚‚ã®ãŒCãƒœã‚¿ãƒ³ã‹Ctrlãƒœã‚¿ãƒ³ã§ç™ºå‹•ã§ãã¾ã™ã€‚
+	ç¥žæ’ƒã¯ãƒœãƒ ã¨ç•°ãªã‚Šæ”»æ’ƒåˆ¤å®šã¯ã‚ã‚Šã¾ã›ã‚“ãŒã€ç”»é¢å†…ã®å¼¾ã‚’å…¨éƒ¨é§†é€ã™ã‚‹ã¨å…±ã«ã‚¢ã‚¤ãƒ†ãƒ ã‚’å›žåŽã—ã¾ã™ã€‚ã¾ãŸã€æ¶ˆã—ãŸå¼¾ã®æ•°ãŒä¸€å®šæ•°ã«é”ã™ã‚‹ã¨ã€ãƒœãƒ ã‚„æ®‹æ©ŸãŒå¢—ãˆãŸã‚Šã—ã¾ã™ã€‚
+	è¦ã™ã‚‹ã«ã€å¼¾ãŒå¤šãã¦ã‚­ãƒ„ã‚¤ç®‡æ‰€ã§ç¥žæ’ƒã‚’æ’ƒã¤ã“ã¨ã§ã€é›£æ‰€ã‚‚ã‚«ãƒƒãƒˆã§ãã‚‹ã—ãƒœãƒ ã‚‚å¢—ãˆã‚‹ä¸€çŸ³äºŒé³¥ãªã‚·ã‚¹ãƒ†ãƒ ãªã®ã§ã™ã€‚	
+	ã¾ãŸã€æ•µã«ãªã‚‹ã¹ãè¿‘ã¥ã„ã¦æ”»æ’ƒã™ã‚‹ã¨ç‚¹ç¬¦ãŒå¤šãå‡ºã‚‹ã®ã§ã€ç„¡ç†ã—ãªã„ç¯„å›²ã§ç©æ¥µçš„ã«è¿‘ã¥ã„ã¦ã„ãã€ç¥žæ’ƒã‚’ã‚‚ã‚Šã‚‚ã‚Šæ’ƒã£ã¦ã„ãã¾ã—ã‚‡ã†ã€‚
+
+	â—¯ã‚«ã‚¹ãƒªå›žåŽã«ã¤ã„ã¦
+
+	ã€€æ•µå¼¾ã«ã‚«ã‚¹ã‚‹ã¨ã€å·¦ä¸‹ã®ã‚²ãƒ¼ã‚¸ãŒä¸ŠãŒã‚Šã¾ã™ã€‚ã‚ã‚‹ç¨‹åº¦ã‚²ãƒ¼ã‚¸ãŒä¸ŠãŒã‚‹ã¨ã€è‡ªå‹•çš„ã«ç”»é¢å†…ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’å›žåŽã™ã‚‹ã‚ˆã†ã«ãªã‚Šã¾ã™ã€‚
+
+
+â– ï¼–ï¼ŽãŠå€Ÿã‚Šã—ãŸç´ æã«ã¤ã„ã¦
+
+	å¼¾å¹•é¢¨wikiã‹ã‚‰ã„ã‚ã„ã‚ãŠå€Ÿã‚Šã—ã¦ã„ã¾ã™ã€‚
+	â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“
 	http://www.danmakufu.net/
 
-	›’e‰æ‘œ
-	@‚ä‚«‚¤‚³‚¬—lì‚Ì’e‰æ‘œ‚ðŽg‚í‚¹‚Ä‚¢‚½‚¾‚¢‚Ä‚Ü‚·iˆê•”‰ÁHjB
+	â—‹å¼¾ç”»åƒ
+	ã€€ã‚†ãã†ã•ãŽæ§˜ä½œã®å¼¾ç”»åƒã‚’ä½¿ã‚ã›ã¦ã„ãŸã ã„ã¦ã¾ã™ï¼ˆä¸€éƒ¨åŠ å·¥ï¼‰ã€‚
 
-	üƒGƒtƒFƒNƒg
-	@–kŠC‚Ìƒk[—lì‚ÌŠj’e‰æ‘œ‚ð‰ÁH‚µ‚ÄŽg—p‚µ‚Ä‚¢‚Ü‚·B
+	â—¯ã‚¨ãƒ•ã‚§ã‚¯ãƒˆ
+	ã€€åŒ—æµ·ã®ãƒŒãƒ¼æ§˜ä½œã®æ ¸å¼¾ç”»åƒã‚’åŠ å·¥ã—ã¦ä½¿ç”¨ã—ã¦ã„ã¾ã™ã€‚
 
-	›Œø‰Ê‰¹
-	@ƒUEƒ}ƒbƒ`ƒƒCƒJƒ@ƒY@http://osabisi.sakura.ne.jp/m2/
-@@@@@‚S‚P‚Ry—lì‚ÌŒø‰Ê‰¹(’e–‹•—wiki‚æ‚è)
+	â—‹åŠ¹æžœéŸ³
+	ã€€ã‚¶ãƒ»ãƒžãƒƒãƒãƒ¡ã‚¤ã‚«ã‚¡ã‚ºã€€http://osabisi.sakura.ne.jp/m2/
+ã€€ã€€ã€€ã€€ã€€ï¼”ï¼‘ï¼“yæ§˜ä½œã®åŠ¹æžœéŸ³(å¼¾å¹•é¢¨wikiã‚ˆã‚Š)
 
-	›”wŒiAƒtƒŒ[ƒ€‰æ‘œ
-	@“¹’†‚Ì”wŒi‚ÍŽ©ì‚Å‚·B
-	@‚»‚êˆÈŠO‚ÍAˆÈ‰º‚Ì•ûX‚©‚ç‚¨ŽØ‚è‚µ‚½‚à‚Ì‚ð‰ÁH‚µ‚ÄŽg—p‚µ‚Ä‚¢‚Ü‚·B
-	@Epixiv‚©‚ç
-		‚æ‚à‚« —l@http://www.pixiv.net/member_illust.php?mode=medium&illust_id=33794367
-		ƒtƒWƒC —l@http://www.pixiv.net/member_illust.php?mode=medium&illust_id=10754562
-		–²—tƒcƒFƒ‹ —l@http://www.pixiv.net/member_illust.php?mode=medium&illust_id=15711684
-		‚Ö‚Ñ —l@http://www.pixiv.net/member_illust.php?mode=medium&illust_id=35266038
+	â—‹èƒŒæ™¯ã€ãƒ•ãƒ¬ãƒ¼ãƒ ç”»åƒ
+	ã€€é“ä¸­ã®èƒŒæ™¯ã¯è‡ªä½œã§ã™ã€‚
+	ã€€ãã‚Œä»¥å¤–ã¯ã€ä»¥ä¸‹ã®æ–¹ã€…ã‹ã‚‰ãŠå€Ÿã‚Šã—ãŸã‚‚ã®ã‚’åŠ å·¥ã—ã¦ä½¿ç”¨ã—ã¦ã„ã¾ã™ã€‚
+	ã€€ãƒ»pixivã‹ã‚‰
+		ã‚ˆã‚‚ã æ§˜ã€€http://www.pixiv.net/member_illust.php?mode=medium&illust_id=33794367
+		ãƒ•ã‚¸ã‚¤ æ§˜ã€€http://www.pixiv.net/member_illust.php?mode=medium&illust_id=10754562
+		å¤¢è‘‰ãƒ„ã‚§ãƒ« æ§˜ã€€http://www.pixiv.net/member_illust.php?mode=medium&illust_id=15711684
+		ã¸ã³ æ§˜ã€€http://www.pixiv.net/member_illust.php?mode=medium&illust_id=35266038
 			 http://www.pixiv.net/member_illust.php?mode=medium&illust_id=8675744
-		•Ž‚ —l@http://www.pixiv.net/member_illust.php?mode=medium&illust_id=13735646
+		é»’ç… æ§˜ã€€http://www.pixiv.net/member_illust.php?mode=medium&illust_id=13735646
 			 http://www.pixiv.net/member_illust.php?mode=medium&illust_id=20758131
-		ˆ¤—… —l@http://www.pixiv.net/member_illust.php?mode=medium&illust_id=26651163	
-		æÎ‰Í‚Ü‚¾‚ç —l@http://www.pixiv.net/member_illust.php?mode=medium&illust_id=1009659
-		‰“‰e —l@http://www.pixiv.net/member_illust.php?mode=medium&illust_id=4279695
-		‚ä‚ñi‹Ë‘ºj —l@http://www.pixiv.net/member_illust.php?mode=medium&illust_id=41140245
-		‚ä‚¤ —l@http://www.pixiv.net/member_illust.php?mode=medium&illust_id=7412058
+		æ„›ç¾… æ§˜ã€€http://www.pixiv.net/member_illust.php?mode=medium&illust_id=26651163	
+		è³½æ²³ã¾ã ã‚‰ æ§˜ã€€http://www.pixiv.net/member_illust.php?mode=medium&illust_id=1009659
+		é å½± æ§˜ã€€http://www.pixiv.net/member_illust.php?mode=medium&illust_id=4279695
+		ã‚†ã‚“ï¼ˆæ¡æ‘ï¼‰ æ§˜ã€€http://www.pixiv.net/member_illust.php?mode=medium&illust_id=41140245
+		ã‚†ã† æ§˜ã€€http://www.pixiv.net/member_illust.php?mode=medium&illust_id=7412058
 			 http://www.pixiv.net/member_illust.php?mode=medium&illust_id=7618262
-	@EFreepage`Material Side
+	ã€€ãƒ»Freepageï½žMaterial Side
 			http://freepage717.web.fc2.com/
-	@EDRAGON FORCE
+	ã€€ãƒ»DRAGON FORCE
 			http://www.geocities.jp/dragonforce373/
 		
 
 
-¡‚VD˜A—æ
+â– ï¼—ï¼Žé€£çµ¡å…ˆ
 
-	ƒoƒO•ñA‹êîA‚»‚Ì‘¼‚¢‚ë‚¢‚ë‚ª‚ ‚é•û‚Í“®‰æ‚ÉƒRƒƒ“ƒg‚·‚é‚©A
-	«‚ÌƒAƒhƒŒƒX‚ÉŒä˜A—‰º‚³‚¢B
+	ãƒã‚°å ±å‘Šã€è‹¦æƒ…ã€ãã®ä»–ã„ã‚ã„ã‚ãŒã‚ã‚‹æ–¹ã¯å‹•ç”»ã«ã‚³ãƒ¡ãƒ³ãƒˆã™ã‚‹ã‹ã€
+	â†“ã®ã‚¢ãƒ‰ãƒ¬ã‚¹ã«å¾¡é€£çµ¡ä¸‹ã•ã„ã€‚
 	rodo2989@gmail.com
