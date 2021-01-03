@@ -1,6 +1,8 @@
 	#東方弾幕風[Stage]
 	#Title[ANOTHER STAGE-B]
 	#Text[～Hell Tour Course B～
-There's no helping the free time, free time…
+Free time, free time cannot be helped…
 That's right, I wanted to play with that guy!
 Let's Air Battle over Hell's skies!!]
+
+# Editor's note: ALL_ can be removed when patching.
