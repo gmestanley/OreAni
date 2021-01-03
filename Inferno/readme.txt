@@ -1,7 +1,7 @@
 呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪
 
-		Ore no Animism ~Inferno~   Ver.1.03
-				 Instruction Manual	    2014/5/3
+		Ore no Animism ~Inferno~  Ver.1.03
+				 	User's Manual	    2014/5/3
 
 呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪祝呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪
 
