@@ -8,8 +8,6 @@ Normal
 Fantastic
 妖魔のレアメタル/Apparition's Rare Metal
 無常の風/Wind of Impermanence
-どこか物足りない弾幕/Somehow Unsatisfying Danmaku (called "anyhow insufficient" before)
-シュガーブロケード/Sugar Blockade
 Last Word
 徒花散らす業の風/Scattering of Unbearing Flowers' Wind
 
@@ -80,6 +78,8 @@ Last Word
 八つの地獄を統べる者/Ruler of the Eight Hells
 
 //AnotherA
+どこか物足りない弾幕/Somehow Unsatisfying Danmaku* (called "anyhow insufficient" before)
+シュガーブロケード/Sugar Blockade*
 Last Word
 常勝無量光/Unbeaten Unmeasurable Light
 //AnotherB
