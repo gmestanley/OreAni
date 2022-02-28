@@ -8,12 +8,12 @@
 ■ Table of Contents
 
 　１．注意事項
-　２．挨拶
+　２．Greetings
 　３．入っているもの
 　４．遊び方
 　５．マニュアル
-　６．素材について
-　７．何かあったら
+　６．About the Material
+　７．If something happens
 
 
 ■１．注意事項
@@ -23,7 +23,7 @@
 　こちらから一方的にウルトラギャラクティカリスペクトしているだけです。
 　
 
-■２．挨拶
+■２．Greetings
 
 	　この度は「Ore no Animism ~Inferno~」をＤＬして頂きありがとうございます。
 	このゲームは魔王討伐を目標に、立ちはだかる有象無象をなぎ払いつつ地獄を駆け抜ける
@@ -37,7 +37,7 @@
 ■３．入っているもの
 
 	１．The th_dnh Folder
-	２．readme ← You're here
+	２．readme ← You are here
 	３．Extras
 
 
@@ -66,7 +66,7 @@
 
 	　原則、弾幕風の操作方法と同じです。
 
-	　Cursor keys：Movement
+	　Cursor Keys：Movement
 	　Z：Shoot(押しっぱなしでオート連射)、決定
 	　X：Bomb, Cancel
 	　C：神撃発動
@@ -86,21 +86,21 @@
 	　敵弾にカスると、左下のゲージが上がります。ある程度ゲージが上がると、自動的に画面内のアイテムを回収するようになります。
 
 
-■６．About the Borrowed Materials
+■６．Regarding the Borrowed Materials
 
 	I borrow some things from the Danmakufu Wiki.
 	↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 	http://www.danmakufu.net/
 
 	○ Bullet Images
-	　ゆきうさぎ様作の弾画像を使わせていただいてます（一部加工）。
+	　Yukiusagi-sama 作のbullet imagesを使わせていただいてます（一部加工）。
 
 	◯ Graphical Effects
 	　北海のヌー様作の核弾画像を加工して使用しています。
 
 	○ Sound Effects
 	　The Matchmakers　http://osabisi.sakura.ne.jp/m2/
-　　　　　４１３y様作の効果音(From the Danmakufu Wiki)
+　　　　　 413y-sama作のsound effects (From the Danmakufu Wiki)
 
 	○ 背景、フレーム画像
 	　道中の背景は自作です。
@@ -126,8 +126,8 @@
 		
 
 
-■７．連絡先
+■７．Contact Address
 
-	バグ報告、苦情、その他いろいろがある方は動画にコメントするか、
-	↓のアドレスに御連絡下さい。
+	Bug reports, complaints, and other things がある方は動画にコメントするか、
+	or contact that ↓ address.
 	rodo2989@gmail.com
