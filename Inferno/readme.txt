@@ -64,10 +64,10 @@
 
 ■５．Manual
 
-	　原則、弾幕風の操作方法と同じです。
+	　In general, it's the same as Danmakufu's controls.
 
 	　Cursor Keys：Movement
-	　Z：Shoot(押しっぱなしでオート連射)、決定
+	　Z：Shoot(押しっぱなしでオート連射), Confirm
 	　X：Bomb, Cancel
 	　C：神撃発動
 	　Left Shift：減速移動
