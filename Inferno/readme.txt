@@ -5,7 +5,7 @@
 
 呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪祝呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪呪
 
-■目次
+■ Table of Contents
 
 　１．注意事項
 　２．挨拶
@@ -25,7 +25,7 @@
 
 ■２．挨拶
 
-	　この度は「おれのアニミズム～地獄篇～」をＤＬして頂きありがとうございます。
+	　この度は「Ore no Animism ~Inferno~」をＤＬして頂きありがとうございます。
 	このゲームは魔王討伐を目標に、立ちはだかる有象無象をなぎ払いつつ地獄を駆け抜ける
 	サクサク系縦シューティングです。
 
@@ -36,43 +36,43 @@
 
 ■３．入っているもの
 
-	１．th_dnhフォルダ
-	２．readme←今ここ
-	３．おまけ
+	１．The th_dnh Folder
+	２．readme ← You're here
+	３．Extras
 
 
-■４．遊び方
+■４．How to Play
 
-	　１．ダウンロードしたファイルを解凍する
+	　１．Extract the downloaded files
 
-	　２．th_dnhフォルダを開く
+	　２．Open the th_dnh folder
 
-	　３．th_dnh.exeから東方弾幕風を起動して、Stageからプレイするスクリプトを選ぶ
+	　３．Launch Touhou Danmakufu from th_dnh.exe, and choose one of the playable scripts from Stage
 		
-		Normal…等活地獄　1週目
+		Normal…Sañjīva　Loop 1
 
-		Fantastic…無間地獄　2週目
+		Fantastic…Avici　Loop 2
 
-		各ステージのPractice
+		Practice of every stage
 
-		Another…AとBがあります。
+		Another…There's an A and a B.
 
-		Extra…追加ステージ
+		Extra…Additional Stage
 
-		極限神技…10コ
+		極限神技…10 of them
 
 
-■５．マニュアル
+■５．Manual
 
 	　原則、弾幕風の操作方法と同じです。
 
-	　カーソルキー：移動
-	　Z：弾(押しっぱなしでオート連射)、決定
-	　X：ボム、キャンセル
+	　Cursor keys：Movement
+	　Z：Shoot(押しっぱなしでオート連射)、決定
+	　X：Bomb, Cancel
 	　C：神撃発動
-	　左Shift：減速移動
-	　Esc：ポーズ
-	　左Ctrl：イベントスキップ、神撃発動
+	　Left Shift：減速移動
+	　Esc：Pause
+	　Left Ctrl：Dialogue Skip, 神撃発動
 
 	◯神撃について
 	　
@@ -86,39 +86,39 @@
 	　敵弾にカスると、左下のゲージが上がります。ある程度ゲージが上がると、自動的に画面内のアイテムを回収するようになります。
 
 
-■６．お借りした素材について
+■６．About the Borrowed Materials
 
-	弾幕風wikiからいろいろお借りしています。
+	I borrow some things from the Danmakufu Wiki.
 	↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 	http://www.danmakufu.net/
 
-	○弾画像
+	○ Bullet Images
 	　ゆきうさぎ様作の弾画像を使わせていただいてます（一部加工）。
 
-	◯エフェクト
+	◯ Graphical Effects
 	　北海のヌー様作の核弾画像を加工して使用しています。
 
-	○効果音
-	　ザ・マッチメイカァズ　http://osabisi.sakura.ne.jp/m2/
-　　　　　４１３y様作の効果音(弾幕風wikiより)
+	○ Sound Effects
+	　The Matchmakers　http://osabisi.sakura.ne.jp/m2/
+　　　　　４１３y様作の効果音(From the Danmakufu Wiki)
 
-	○背景、フレーム画像
+	○ 背景、フレーム画像
 	　道中の背景は自作です。
 	　それ以外は、以下の方々からお借りしたものを加工して使用しています。
 	　・pixivから
-		よもき 様　http://www.pixiv.net/member_illust.php?mode=medium&illust_id=33794367
-		フジイ 様　http://www.pixiv.net/member_illust.php?mode=medium&illust_id=10754562
-		夢葉ツェル 様　http://www.pixiv.net/member_illust.php?mode=medium&illust_id=15711684
-		へび 様　http://www.pixiv.net/member_illust.php?mode=medium&illust_id=35266038
-			 http://www.pixiv.net/member_illust.php?mode=medium&illust_id=8675744
-		黒獅 様　http://www.pixiv.net/member_illust.php?mode=medium&illust_id=13735646
-			 http://www.pixiv.net/member_illust.php?mode=medium&illust_id=20758131
-		愛羅 様　http://www.pixiv.net/member_illust.php?mode=medium&illust_id=26651163	
-		賽河まだら 様　http://www.pixiv.net/member_illust.php?mode=medium&illust_id=1009659
-		遠影 様　http://www.pixiv.net/member_illust.php?mode=medium&illust_id=4279695
-		ゆん（桐村） 様　http://www.pixiv.net/member_illust.php?mode=medium&illust_id=41140245
-		ゆう 様　http://www.pixiv.net/member_illust.php?mode=medium&illust_id=7412058
-			 http://www.pixiv.net/member_illust.php?mode=medium&illust_id=7618262
+		Yomoki-sama	　  http://www.pixiv.net/member_illust.php?mode=medium&illust_id=33794367
+		Fujii-sama	    http://www.pixiv.net/member_illust.php?mode=medium&illust_id=10754562
+		Tseru Muyou-sama    http://www.pixiv.net/member_illust.php?mode=medium&illust_id=15711684
+		Hebi-sama　	   http://www.pixiv.net/member_illust.php?mode=medium&illust_id=35266038
+				    http://www.pixiv.net/member_illust.php?mode=medium&illust_id=8675744
+		Kokushi-sama　	   http://www.pixiv.net/member_illust.php?mode=medium&illust_id=13735646
+				    http://www.pixiv.net/member_illust.php?mode=medium&illust_id=20758131
+		Aira-sama	    http://www.pixiv.net/member_illust.php?mode=medium&illust_id=26651163	
+		Madara Saiga-sama   http://www.pixiv.net/member_illust.php?mode=medium&illust_id=1009659
+		En'ei-sama　	   http://www.pixiv.net/member_illust.php?mode=medium&illust_id=4279695
+		Yun (Kirimura)-sama http://www.pixiv.net/member_illust.php?mode=medium&illust_id=41140245
+		Yuu-sama　	   http://www.pixiv.net/member_illust.php?mode=medium&illust_id=7412058
+				    http://www.pixiv.net/member_illust.php?mode=medium&illust_id=7618262
 	　・Freepage～Material Side
 			http://freepage717.web.fc2.com/
 	　・DRAGON FORCE
